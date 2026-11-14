@@ -1,0 +1,1457 @@
+<!doctype html>
+<html lang="es-HN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>Vitrina HN: compara precios de tiendas en Honduras</title>
+<meta name="description" content="Compara en segundos el precio de celulares, televisores, laptops, refrigeradoras y más en Diunsa, La Curacao, Walmart, Elektra, Lady Lee, Gallo más Gallo y otras tiendas de Honduras. Mira dónde está más barato, si de verdad bajó y su historial de precios.">
+<link rel="canonical" href="https://vitrinahn.shop/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Vitrina HN","alternateName":"Vitrina Honduras","url":"https://vitrinahn.shop/","inLanguage":"es-HN","description":"Comparador de precios de tiendas de Honduras","potentialAction":{"@type":"SearchAction","target":"https://vitrinahn.shop/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vitrina HN">
+<meta property="og:title" content="Vitrina HN · ¿Dónde sale más barato en Honduras?">
+<meta property="og:url" content="https://vitrinahn.shop/">
+<meta property="og:locale" content="es_HN">
+<meta property="og:description" content="Compara precios de las tiendas grandes de Honduras en un solo lugar.">
+<meta property="og:image" content="https://vitrinahn.shop/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Tema claro: fondo blanco, grises fríos muy suaves, etiqueta de precio amarilla como único acento fuerte */
+  --paper:#FFFFFF; --soft:#F5F7F9; --ink:#141B23; --muted:#5D6873; --faint:#8A949E; --line:#E6EAEE; --line-2:#D5DBE1;
+  --tag:#FFD84A; --tag-ink:#1E1700; --act:#0B5FB8; --act-soft:#EEF5FD; --down:#127A45; --down-soft:#E7F5EE; --warn:#9A4A0B; --warn-soft:#FDF1E6; --heart:#E11D48;
+  --s-jetstereo:#1F4FD8; --s-diunsa:#E07B12; --s-curacao:#C8102E; --s-elektra:#6B3FA0; --s-ladylee:#D6337A; --s-walmart:#0A7FD6;
+  --s-gallo:#CA8A04; --s-radioshack:#334155; --s-tropigas:#0E7490; --s-acosa:#92400E; --s-gamestation:#16A34A; --s-sycom:#7C3AED;
+  --r:12px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.45 Barlow,system-ui,sans-serif}
+[hidden]{display:none!important}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--act);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Encabezado */
+header.top .wrap{padding-block:18px 22px;display:grid;gap:14px}
+.brandline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{font:800 24px/1 "Barlow Condensed",sans-serif;margin:0;letter-spacing:.01em;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.logo svg{width:32px;height:32px;flex:0 0 auto}
+.logo span{display:inline-block;background:var(--tag);color:var(--tag-ink);padding:3px 7px 1px;border-radius:4px;margin-left:5px;transform:rotate(-2deg)}
+.top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.updated{color:var(--muted);font-size:14px;margin-right:6px}
+.hbtn{height:38px;border:1px solid var(--line-2);border-radius:10px;background:var(--paper);padding:0 12px;font-weight:600;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap}
+.hbtn svg{width:17px;height:17px}
+.hbtn:hover{border-color:var(--ink)}
+.hbtn[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.hbtn .badge{background:var(--tag);color:var(--tag-ink);border-radius:999px;font-size:12px;line-height:18px;padding:0 7px;font-weight:700}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:28px;align-items:end}
+h1.ask{font:700 clamp(36px,5.2vw,60px)/.95 "Barlow Condensed",sans-serif;margin:6px 0 8px;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:56ch}
+.search{position:relative}
+.search input{width:100%;height:56px;border:1.5px solid var(--line-2);border-radius:14px;background:var(--paper);padding:0 18px 0 50px;font-size:17px;box-shadow:0 1px 2px rgba(20,27,35,.04)}
+.search input:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 4px rgba(20,27,35,.07)}
+.search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;stroke:var(--faint)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:14px}}
+
+/* Pestañas de categoría */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--paper)}
+nav.cats{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-block:1px solid var(--line)}
+.catwrap{position:relative}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth}
+.tabarrow{position:absolute;top:0;bottom:0;width:52px;border:0;padding:0;cursor:pointer;display:grid;align-items:center;z-index:2;color:var(--ink)}
+.tabarrow svg{width:30px;height:30px;padding:6px;border-radius:50%;background:var(--paper);border:1px solid var(--line-2);box-shadow:0 2px 6px rgba(20,27,35,.08)}
+.tabarrow:hover svg{border-color:var(--ink)}
+.tabarrow.l{left:max(8px,env(safe-area-inset-left,0px));justify-items:start;background:linear-gradient(90deg,var(--paper) 50%,rgba(255,255,255,0))}
+.tabarrow.r{right:max(8px,env(safe-area-inset-right,0px));justify-items:end;background:linear-gradient(270deg,var(--paper) 50%,rgba(255,255,255,0))}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:0;background:none;padding:14px 12px 12px;cursor:pointer;font-weight:600;font-size:15px;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap}
+.tab small{font-weight:500;color:var(--faint);margin-left:5px}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--tag)}
+
+/* Diseño principal: filtros a la izquierda, productos a la derecha */
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:36px;padding-block:24px 48px;align-items:start}
+.layout.solo{grid-template-columns:minmax(0,1fr)}
+.layout.solo aside.side{display:none}
+aside.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px);max-height:calc(100vh - 88px);overflow:auto;padding-right:6px;scrollbar-width:thin}
+.side-head{display:none}
+.fsec{border-bottom:1px solid var(--line);padding-block:14px}
+.fsec:first-child{padding-top:0}
+.fsec h3{font-size:15px;font-weight:700;margin:0 0 8px}
+.opt{display:flex;align-items:center;gap:10px;padding:5px 0;cursor:pointer;font-size:15px;line-height:1.25}
+.opt input{width:17px;height:17px;margin:0;accent-color:var(--ink);flex:0 0 auto}
+.opt .lbl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.opt .n{color:var(--faint);font-size:13px;font-variant-numeric:tabular-nums}
+.opt .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.opt.zero{opacity:.45}
+.linkbtn{border:0;background:none;color:var(--act);font-weight:600;cursor:pointer;padding:6px 0 0;font-size:14px}
+.note{font-size:12.5px;color:var(--faint);margin:2px 0 0 27px;line-height:1.3}
+
+/* Barra de resultados */
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.toolbar h2{font:700 26px/1.1 "Barlow Condensed",sans-serif;margin:0}
+.toolbar .count{color:var(--muted);font-size:15px}
+.toolbar .spacer{flex:1}
+.sort{height:40px;border:1px solid var(--line-2);border-radius:10px;background:var(--paper);padding:0 34px 0 12px;font-size:15px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23141B23' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.fbtn{display:none;height:40px;border:1px solid var(--ink);border-radius:10px;background:var(--paper);padding:0 14px;font-weight:600;cursor:pointer}
+.didyou{margin:-4px 0 12px;color:var(--muted);font-size:15px}
+.didyou b{color:var(--ink)}
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-2);background:var(--soft);border-radius:999px;padding:4px 6px 4px 12px;font-size:14px;cursor:pointer}
+.pill svg{width:16px;height:16px;stroke:var(--muted)}
+.pill:hover{border-color:var(--ink)}
+.pills .clear{border:0;background:none;color:var(--act);font-weight:600;cursor:pointer;font-size:14px;padding:4px 6px}
+
+/* Tarjetas de producto */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.p{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;overflow:hidden;transition:box-shadow .2s,border-color .2s}
+.p:hover{border-color:var(--line-2);box-shadow:0 6px 20px rgba(20,27,35,.07)}
+.p .img{display:block;aspect-ratio:1/1;max-width:100%;padding:18px;background:#fff;cursor:pointer;text-decoration:none}
+.p .img img{width:100%;height:100%;object-fit:contain;display:block}
+.ph{display:grid;place-items:center;width:100%;height:100%;font:700 40px "Barlow Condensed";color:#C9D0D8;background:var(--soft);border-radius:8px}
+.p .body{padding:4px 14px 0;display:flex;flex-direction:column;gap:2px}
+.colors{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 14px 0}
+.clabel{font-size:13px;color:var(--muted);margin-right:2px}
+.caps{display:flex;flex-wrap:wrap;gap:6px;margin:8px 14px 0}
+.cap{border:1px solid var(--line-2);background:var(--paper);color:var(--ink);border-radius:8px;padding:3px 9px;font:inherit;font-size:12.5px;cursor:pointer;text-decoration:none;line-height:1.3}
+.cap[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.cap:hover{border-color:var(--muted)}
+.cdot{width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line-2);background:var(--c,#ccc);cursor:pointer;padding:0;flex:0 0 auto}
+.cdot[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.cdot:hover{box-shadow:0 0 0 2px var(--muted)}
+.cmore{font-size:12.5px;color:var(--muted)}
+.sh-info .colors{margin:12px 0 0}
+.sh-info .caps{margin-top:12px}
+.p .b{font-size:13px;color:var(--muted);font-weight:600}
+.p .n{font-size:15px;font-weight:500;line-height:1.3;text-decoration:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.p a.n:hover{text-decoration:underline;text-underline-offset:2px}
+.p .m{font-size:12.5px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.favbtn{position:absolute;top:8px;right:8px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.94);display:grid;place-items:center;cursor:pointer;z-index:1;padding:0}
+.favbtn svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2}
+.favbtn[aria-pressed="true"] svg{fill:var(--heart);stroke:var(--heart)}
+.favbtn:hover{border-color:var(--ink)}
+
+/* La etiqueta de precio */
+.tag{margin:10px 14px 0;background:var(--tag);color:var(--tag-ink);border-radius:8px 8px 8px 2px;padding:9px 11px 8px}
+.tag .price{font:800 30px/1 "Barlow Condensed",sans-serif;letter-spacing:-.01em;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.tag .price .cur{font-size:18px;margin-right:1px}
+.tag .price .dec{font-size:16px;align-self:flex-start;margin-top:2px}
+.tag .was{font:500 13px Barlow,sans-serif;text-decoration:line-through;opacity:.65}
+.tag .where{font-size:13px;font-weight:600;margin-top:4px;display:flex;align-items:center;gap:6px}
+.sw{width:9px;height:9px;border-radius:50%;flex:0 0 auto;display:inline-block}
+.tag .where .sw{box-shadow:0 0 0 2px rgba(255,255,255,.75)}
+.tag.out{background:var(--soft);color:var(--muted)}
+.flags{display:flex;flex-wrap:wrap;gap:4px;margin:8px 14px 0}
+.flag{font-size:12px;font-weight:600;border-radius:6px;padding:2px 7px;background:var(--down-soft);color:var(--down);line-height:1.4}
+.flag.warn{background:var(--warn-soft);color:var(--warn)}
+.flag.info{background:var(--soft);color:var(--muted)}
+.plan{margin:6px 14px 0;font-size:12.5px;color:var(--muted)}
+/* Ofertas en la tarjeta: máximo 3 filas de una línea; el resto en la ficha */
+.offers{list-style:none;margin:10px 0 0;padding:4px 8px 0;border-top:1px solid var(--line)}
+.offers li a{display:grid;grid-template-columns:9px minmax(0,1fr) auto auto;align-items:center;column-gap:8px;text-decoration:none;padding:5px 6px;border-radius:6px;font-size:14px}
+.offers li a:hover{background:var(--act-soft)}
+.offers .st{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.offers .pr{font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.offers .diff{font-size:12px;color:var(--faint);font-variant-numeric:tabular-nums;text-align:right;min-width:52px}
+.offers .best .diff{color:var(--down);font-weight:600}
+.allbtn{text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:8px;width:calc(100% - 16px);margin:2px 8px 0;padding:7px 6px;border:0;border-radius:6px;background:none;color:var(--act);font-weight:600;font-size:14px;cursor:pointer;text-align:left}
+.allbtn:hover{background:var(--act-soft)}
+.cardfoot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding:8px 14px 12px}
+.cmp{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:var(--muted);cursor:pointer;user-select:none}
+.cmp input{width:16px;height:16px;margin:0;accent-color:var(--ink)}
+.save{font-size:13px;color:var(--down);font-weight:600;margin:7px 14px 0}
+.more{display:block;margin:30px auto 0;height:48px;padding:0 28px;border-radius:12px;border:1.5px solid var(--ink);background:var(--paper);font-weight:600;cursor:pointer}
+.more:hover{background:var(--ink);color:var(--paper)}
+.empty{grid-column:1/-1;padding:60px 0;text-align:center;color:var(--muted)}
+.empty strong{display:block;color:var(--ink);font:700 28px "Barlow Condensed";margin-bottom:6px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{padding-block:24px 90px}
+footer p{max-width:75ch;margin:0}
+footer .legal{margin-top:8px;font-size:13px}
+footer .flinks{margin-top:10px;font-size:13.5px}
+footer .fcats{margin-top:10px;font-size:13px;line-height:1.9}
+footer .fcats a{color:var(--muted);text-decoration:none}
+footer .fcats a:hover{color:var(--act);text-decoration:underline}
+footer .flinks a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+footer .flinks a:hover{color:var(--act)}
+
+/* Ofertas reales */
+.deals{display:grid;gap:34px}
+.dsec h3{font:700 24px/1.1 "Barlow Condensed",sans-serif;margin:0 0 4px}
+.dsec > p{margin:0 0 14px;color:var(--muted);max-width:70ch}
+.callout{border:1px solid var(--line);border-left:4px solid var(--tag);border-radius:10px;padding:14px 16px;background:var(--soft);max-width:80ch}
+.callout p{margin:0}
+.stbl{width:100%;border-collapse:collapse;font-size:15px;max-width:900px}
+.stbl th,.stbl td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.stbl th{font-size:13px;color:var(--muted);font-weight:600}
+.stbl td.num{font-variant-numeric:tabular-nums}
+.tscroll{overflow-x:auto}
+.bar{height:7px;border-radius:4px;background:var(--line);margin-top:5px;max-width:140px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--tag)}
+
+/* Ficha de producto y comparación */
+dialog.sheet{border:0;padding:0;width:min(1040px,calc(100vw - 32px));max-height:calc(100vh - 40px);border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.25);color:var(--ink);background:var(--paper);overflow:auto;overscroll-behavior:contain}
+dialog.sheet::backdrop{background:rgba(20,27,35,.45)}
+.sh-head{position:sticky;top:0;background:var(--paper);display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px 10px 20px;border-bottom:1px solid var(--line);z-index:2}
+.sh-head .crumb{color:var(--muted);font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn{width:40px;height:40px;border:0;border-radius:10px;background:none;cursor:pointer;display:grid;place-items:center;flex:0 0 auto}
+.iconbtn:hover{background:var(--soft)}
+.sh-body{padding:22px 24px 30px;display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+.sh-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:30px;align-items:start}
+.sh-top > div{min-width:0}
+.gal-main{aspect-ratio:1/1;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;padding:22px;background:#fff;overflow:hidden;min-width:0}
+.gal-main img{max-width:100%;max-height:100%;width:auto;height:auto;min-width:0;object-fit:contain}
+.gal-th{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
+.gal-th button{width:62px;height:62px;border:1.5px solid var(--line);border-radius:8px;background:#fff;padding:4px;cursor:pointer;flex:0 0 auto}
+.gal-th button[aria-current="true"]{border-color:var(--ink)}
+.gal-th img{width:100%;height:100%;object-fit:contain}
+.sh-info h2{font:700 30px/1.05 "Barlow Condensed",sans-serif;margin:2px 0 6px;text-wrap:balance}
+.sh-info .b{font-weight:600;color:var(--muted);font-size:14px}
+.sh-info .m{color:var(--faint);font-size:14px}
+.sh-info .tag{margin:14px 0 0;display:inline-block;min-width:220px}
+.sh-info .tag .price{font-size:40px}
+.sh-info .flags,.sh-info .save,.sh-info .plan,.sh-info .caps{margin-left:0;margin-right:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;font-size:13.5px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.abtn{height:42px;border:1px solid var(--line-2);border-radius:10px;background:var(--paper);padding:0 14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:15px}
+.abtn:hover{border-color:var(--ink)}
+.abtn svg{width:18px;height:18px}
+.abtn.wa{background:#1FA855;border-color:#1FA855;color:#fff}
+.abtn[aria-pressed="true"] svg{fill:var(--heart);stroke:var(--heart)}
+.sh-sec h3{font:700 22px/1.1 "Barlow Condensed",sans-serif;margin:0 0 10px}
+.otable{width:100%;border-collapse:collapse;font-size:15px}
+.otable th,.otable td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.otable th{font-size:13px;color:var(--muted);font-weight:600}
+.otable td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.otable .stn{display:flex;align-items:center;gap:8px;font-weight:600}
+.otable .sub2{display:block;font-size:12.5px;color:var(--muted);font-weight:400}
+.otable tr.best td{background:#FFFBEA}
+.otable a.go{display:inline-flex;align-items:center;gap:4px;height:34px;padding:0 12px;border-radius:8px;border:1px solid var(--line-2);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+.otable a.go:hover{border-color:var(--ink)}
+.only-s{display:none}
+.refnote{font-size:13px;color:var(--muted);margin:10px 0 0}
+@media (max-width:760px){.only-s{display:inline}.otable .sub2.only-s{display:block}}
+.chart{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:#fff}
+.chartw{position:relative;touch-action:pan-y;cursor:crosshair}
+.ctip{position:absolute;top:8px;pointer-events:none;background:#fff;border:1px solid var(--line-2);border-radius:10px;box-shadow:0 6px 18px rgba(20,27,35,.12);padding:8px 10px;font-size:13px;line-height:1.5;white-space:nowrap;z-index:2}
+.ctip b{font-variant-numeric:tabular-nums}
+.ctip .sw{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.ctip .up{color:#B4231B;font-weight:600}.ctip .dn{color:#0F7A4B;font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;font-size:13.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.verdicts{display:grid;gap:6px;margin:0 0 12px;padding:0;list-style:none}
+.verdicts li{font-size:15px;padding-left:22px;position:relative}
+.verdicts li::before{content:"";position:absolute;left:4px;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--faint)}
+.verdicts li.good::before{background:var(--down)}
+.verdicts li.bad::before{background:#D97706}
+.specs{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);border-top:1px solid var(--line);font-size:15px}
+.specs dt,.specs dd{margin:0;padding:8px 10px;border-bottom:1px solid var(--line)}
+.specs dt{color:var(--muted);background:var(--soft)}
+.desc{color:#2B333C;max-width:80ch;margin:14px 0 0}
+.desc p{margin:0 0 8px}
+.desc ul{margin:0 0 8px;padding-left:20px}
+.desc li{margin:3px 0}
+.desc.clip{max-height:9.5em;overflow:hidden;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+.muted{color:var(--muted)}
+/* Comparar */
+.ctbl{border-collapse:collapse;font-size:14.5px;min-width:100%}
+.ctbl th,.ctbl td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;min-width:190px}
+.ctbl th:first-child,.ctbl td:first-child{min-width:130px;color:var(--muted);font-weight:600;background:var(--soft);position:sticky;left:0}
+.ctbl img{width:120px;height:120px;object-fit:contain;display:block;margin-bottom:6px}
+.ctbl .cp{font:800 24px "Barlow Condensed";background:var(--tag);padding:2px 8px;border-radius:6px;display:inline-block}
+.ctbl .lowest{color:var(--down);font-weight:700}
+.cbar{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:14px;padding:8px 8px 8px 16px;display:flex;gap:10px;align-items:center;z-index:30;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100vw - 24px)}
+.cbar .ct{font-weight:600;white-space:nowrap}
+.cbar button{height:38px;border-radius:10px;border:0;padding:0 14px;font-weight:700;cursor:pointer}
+.cbar .go{background:var(--tag);color:var(--tag-ink)}
+.cbar .x{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.toast{position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:12px;padding:12px 14px 12px 16px;z-index:50;display:flex;gap:12px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100vw - 24px);font-size:15px}
+.toast button{border:0;background:var(--tag);color:var(--tag-ink);font-weight:700;border-radius:8px;height:34px;padding:0 12px;cursor:pointer}
+.toast .x{background:transparent;color:#fff;padding:0 6px}
+
+/* Celular y tableta: los filtros pasan a un panel deslizable */
+.scrim{display:none}
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0;padding-top:16px}
+  .fbtn{display:inline-flex;align-items:center;gap:8px}
+  .layout.solo .fbtn{display:none}
+  aside.side{position:fixed;inset:0 auto 0 0;z-index:40;width:min(360px,88vw);max-height:none;height:100%;background:var(--paper);padding:0 20px calc(90px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));transform:translateX(-102%);transition:transform .25s ease;box-shadow:0 0 40px rgba(0,0,0,.18)}
+  aside.side.open{transform:none}
+  .side-head{display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--paper);padding:calc(14px + env(safe-area-inset-top,0px)) 0 12px;border-bottom:1px solid var(--line);margin-bottom:14px;z-index:1}
+  .side-head h2{margin:0;font:700 24px "Barlow Condensed"}
+  .side-head button{border:0;background:none;padding:6px;cursor:pointer}
+  .side-foot{position:fixed;left:0;bottom:0;width:min(360px,88vw);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:var(--paper);border-top:1px solid var(--line)}
+  .side-foot button{width:100%;height:48px;border:0;border-radius:12px;background:var(--ink);color:var(--paper);font-weight:700;cursor:pointer}
+  .scrim{display:block;position:fixed;inset:0;z-index:35;background:rgba(20,27,35,.35);opacity:0;pointer-events:none;transition:opacity .25s}
+  .scrim.open{opacity:1;pointer-events:auto}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .toolbar h2{font-size:22px;width:100%}
+}
+@media (min-width:901px){.side-foot{display:none}}
+@media (max-width:760px){
+  dialog.sheet{width:100vw;max-width:100vw;height:100%;max-height:100%;border-radius:0;margin:0}
+  .sh-top{grid-template-columns:minmax(0,1fr);gap:18px}
+  .gal-main{aspect-ratio:4/3}
+  .sh-body{padding:16px 16px calc(28px + env(safe-area-inset-bottom,0px))}
+  .specs{grid-template-columns:minmax(0,1fr)}
+  .specs dt{border-bottom:0;padding-bottom:2px;background:none;font-size:13px}
+  .otable .hide-s{display:none}
+  .otable .stn{white-space:nowrap}
+  .otable th,.otable td{padding:10px 6px}
+  .otable a.go{padding:0 10px}
+  .updated{width:100%;order:3}
+}
+@media (max-width:420px){
+  .layout{padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+  .p .n{font-size:14px}
+  .p .img{padding:10px}
+  .p .body{padding:2px 10px 0}
+  .tag{margin:8px 10px 0;padding:8px 9px 7px}
+  .tag .price{font-size:25px}
+  .flags,.save,.plan{margin-left:10px;margin-right:10px}
+  .offers{padding:4px 2px 0}
+  .offers li a{font-size:13px;padding:5px 4px;column-gap:6px}
+  .offers .diff{display:none}
+  .allbtn{font-size:13px;margin:2px 2px 0;width:calc(100% - 4px)}
+  .cardfoot{padding:6px 10px 10px}
+  .favbtn{width:32px;height:32px;top:6px;right:6px}
+  .p .clabel{display:none}
+  .colors{margin-left:10px;margin-right:10px;gap:5px}
+  .cdot{width:20px;height:20px}
+  .caps{margin:8px 10px 0}
+  .hbtn .lbl{display:none}
+}
+@media (prefers-reduced-motion:reduce){aside.side,.scrim,.p{transition:none}}
+
+/* ===== Diseño verde: encabezado compacto, filtros en fila, precio limpio ===== */
+:root{--ink:#0B1F17;--muted:#5B6B64;--faint:#8A9690;--line:#E3EAE6;--line-2:#D3DDD8;--soft:#F4F8F6;--act:#059669;--act-soft:#E8F7F0;--down:#047857;--down-soft:#E8F7F0;--tag:#059669;--tag-ink:#fff}
+body{font-family:Inter,system-ui,sans-serif;font-size:15px}
+.logo,.toolbar h2,.tag .price,.empty strong,.dsec h3,.sh-info h2,.sh-sec h3,.ctbl .cp{font-family:Inter,system-ui,sans-serif;letter-spacing:-.02em}
+.logo{font-size:20px;font-weight:800;gap:9px}.logo svg{width:30px;height:30px}
+.logo span{background:none;color:var(--act);transform:none;padding:0;margin-left:-3px;border-radius:0}
+header.top .wrap.topbar{display:flex;align-items:center;gap:20px;padding-block:12px}
+.topbar .search{flex:1;max-width:640px}
+.topbar .search input{height:44px;border-radius:12px;background:var(--soft);border:1px solid var(--line);font-size:15px;padding:0 14px 0 42px;box-shadow:none}
+.topbar .search input:focus{background:#fff;border-color:var(--act);box-shadow:0 0 0 3px var(--act-soft)}
+.topbar .search svg{left:14px;width:18px;height:18px;stroke:var(--muted)}
+.top-actions{margin-left:auto;gap:4px}
+.hbtn{border:0;background:none;height:38px;padding:0 10px;font-size:14px;border-radius:10px}
+.hbtn:hover{background:var(--soft)}
+.hbtn[aria-current="page"]{background:var(--act-soft);color:var(--act)}
+.hbtn .badge{background:var(--act);color:#fff}
+nav.cats{border-top:1px solid var(--line)}
+.tabs{gap:6px;padding:9px 0}
+.tab{padding:7px 14px;border-radius:999px;border-bottom:0;font-size:14px;font-weight:600}
+.tab:hover{background:var(--soft)}
+.tab[aria-selected="true"]{background:var(--act);color:#fff}
+.tab[aria-selected="true"] small{color:rgba(255,255,255,.82)}
+.layout,.layout.solo{display:block;padding-block:16px 48px}
+.fbar{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px}
+.fchips{display:flex;gap:8px;flex-wrap:wrap;flex:1;min-width:0}
+.fdrop{position:relative}
+.fchip{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border:1px solid var(--line-2);border-radius:999px;background:#fff;font-weight:500;font-size:14px;cursor:pointer;white-space:nowrap;color:var(--ink)}
+.fchip svg{width:14px;height:14px;color:var(--muted)}
+.fchip:hover{border-color:var(--ink)}
+.fchip.on{border-color:var(--act);color:var(--act);background:var(--act-soft)}
+.fchip.on svg{color:var(--act)}
+.fpanel{display:none;position:absolute;top:calc(100% + 6px);left:0;z-index:30;min-width:250px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 34px rgba(11,31,23,.16);padding:10px 16px 12px}
+.fdrop.open .fpanel{display:block}
+.ptitle{font-weight:700;margin:0;font-size:14px;flex:1}
+.phead{display:flex;align-items:center;gap:10px;margin:2px 0 6px}
+.pclear{border:0;background:none;color:var(--act);font-weight:600;font-size:13.5px;cursor:pointer;padding:4px 6px}
+.pclose{display:none;border:0;background:none;color:var(--muted);cursor:pointer;padding:4px;line-height:0}
+.pfind{width:100%;height:36px;border:1px solid var(--line-2);border-radius:10px;padding:0 12px;font:inherit;font-size:14px;margin:2px 0 8px}
+.pfind:focus{outline:2px solid var(--act);outline-offset:-1px;border-color:transparent}
+.fpanel .pfoot{display:none}
+.pbody{max-height:320px;overflow-y:auto;margin-right:-8px;padding-right:8px}
+.opt input{accent-color:var(--act)}
+.sort{height:36px;border-radius:999px;font-size:14px;flex:0 0 auto}
+.toolbar{margin-bottom:12px}.toolbar h2{font-size:22px;font-weight:700}
+.p{border-radius:14px}
+.p .b{text-transform:uppercase;letter-spacing:.05em;font-size:11.5px}
+.p .n{font-size:14.5px}
+.tag,.sh-info .tag{background:none;color:var(--ink);padding:0;margin:10px 14px 0;border-radius:0;min-width:0}
+.sh-info .tag{margin:14px 0 0}
+.tag .price{font-weight:800;font-size:26px;gap:8px}.sh-info .tag .price{font-size:34px}
+.tag .price .cur{font-size:.72em;margin-right:3px;font-weight:700}
+.tag .price .dec{font-size:.55em}
+.tag .was{font:400 13px Inter,sans-serif;color:var(--faint)}
+.tag .where{font-weight:400;color:var(--muted);margin-top:3px;font-size:13px;display:block}
+.tag .where b{color:var(--ink);font-weight:600}
+.tag.out .price{color:var(--muted)}
+.save{display:inline-block;align-self:flex-start;background:var(--act-soft);color:var(--act);border-radius:6px;padding:2px 8px;margin:7px 14px 0;font-size:13px}
+.sh-info .save{margin-left:0}
+.allbtn{color:var(--act)}
+.nst{font-size:13px;font-weight:600;color:var(--act);text-decoration:none;white-space:nowrap}.nst:hover{text-decoration:underline}
+.offers li a:hover{background:var(--soft)}
+.more{border-color:var(--act);color:var(--act)}.more:hover{background:var(--act);color:#fff}
+.cbar .go{background:var(--act);color:#fff}
+.toast button{background:var(--act);color:#fff}
+.bar i{background:var(--act)}
+.callout{border-left-color:var(--act)}
+.otable tr.best td{background:var(--act-soft)}
+.ctbl .cp{background:var(--act-soft);color:var(--ink)}
+footer .wrap{padding-block:20px 90px}
+@media (max-width:760px){
+  header.top .wrap.topbar{flex-wrap:wrap;gap:10px;padding-block:10px}
+  .topbar .search{order:3;flex-basis:100%;max-width:none}
+  .fbar{flex-direction:column;align-items:stretch;gap:8px}
+  .fchips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -12px;padding:0 12px}
+  .fchips::-webkit-scrollbar{display:none}
+  .sort{align-self:flex-start}
+  .fpanel{position:fixed;left:0;right:0;bottom:0;top:auto;max-height:78vh;min-width:0;border-radius:18px 18px 0 0;padding:0;z-index:61;overflow:hidden;flex-direction:column}
+  .fdrop.open .fpanel{display:flex}
+  .phead{padding:14px 16px 8px 20px;margin:0;border-bottom:1px solid var(--line)}
+  .ptitle{font-size:16px}
+  .pclose{display:block}
+  .pfind{margin:10px 20px 4px;width:calc(100% - 40px);height:42px;font-size:16px}
+  .pbody{max-height:none;margin-right:0;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:6px 20px 8px}
+  .fpanel .pfoot{display:block;padding:10px 20px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#fff}
+  .fdrop.open::before{content:"";position:fixed;inset:0;background:rgba(11,31,23,.35);z-index:60}
+  .fpanel .fdone{display:block;width:100%;height:46px;margin-top:0;border:0;border-radius:12px;background:var(--act);color:#fff;font-weight:700;font-size:15px}
+  .tag .price{font-size:22px}
+  .toolbar h2{width:auto;font-size:20px}
+}
+@media (max-width:420px){.tag{margin:8px 10px 0}.save{margin-left:10px}}
+.skel{height:330px;border-radius:16px;background:linear-gradient(100deg,#F1F5F3 30%,#E6EDE9 50%,#F1F5F3 70%) 0 0/250% 100%;animation:skel 1.3s linear infinite}
+@keyframes skel{to{background-position:-250% 0}}
+@media (max-width:760px){.skel{height:270px}}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}}
+/* Portada: tarjetas por categoría */
+.home{margin:2px 0 26px}
+.intro{margin:4px 0 18px}
+.intro h1{font-size:26px;line-height:1.15;letter-spacing:-.02em;margin:0 0 6px}
+.intro p{margin:0;color:var(--muted);font-size:15px;max-width:640px}
+.home h2{font:700 24px/1.1 "Barlow Condensed",sans-serif;margin:0 0 12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:14px}
+.tile{position:relative;display:flex;flex-direction:column;height:196px;padding:16px 16px 0;border-radius:18px;overflow:hidden;text-decoration:none;color:#fff;background:linear-gradient(155deg,#0F2A1F 0%,#0B1F17 55%,#123B2B 100%);box-shadow:0 1px 2px rgba(11,31,23,.12);transition:transform .15s ease,box-shadow .15s ease;isolation:isolate}
+.tile::after{content:"";position:absolute;inset:auto -30% -55% -30%;height:75%;background:radial-gradient(closest-side,rgba(5,150,105,.45),transparent);z-index:-1}
+.tile:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,31,23,.18)}
+.tile:focus-visible{outline:3px solid var(--act);outline-offset:2px}
+.tile .tt{font:700 21px/1.05 "Barlow Condensed",sans-serif;letter-spacing:.01em}
+.tile .ts{margin-top:4px;font-size:13px;line-height:1.3;color:#9FE6C6}
+.tile.deal{background:linear-gradient(155deg,#059669 0%,#047857 60%,#065F46 100%)}
+.tile.deal::after{background:radial-gradient(closest-side,rgba(255,255,255,.22),transparent)}
+.tile.deal .ts{color:#D1FAE5}
+.collage{position:relative;flex:1;margin-top:8px}
+.collage span{position:absolute;bottom:-10px;width:70px;height:70px;border-radius:14px;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.28);display:grid;place-items:center;overflow:hidden}
+.collage img{width:100%;height:100%;object-fit:contain;padding:6px}
+.collage span:nth-child(1){left:0;transform:rotate(-8deg);bottom:-4px}
+.collage span:nth-child(2){left:50%;margin-left:-44px;width:88px;height:88px;bottom:6px;z-index:2}
+.collage span:nth-child(3){right:0;transform:rotate(8deg);bottom:-4px}
+.tile .sh{display:none}
+@media (max-width:760px){
+  .home{margin:0 0 20px}
+  .intro h1{font-size:21px}
+  .intro p{font-size:14px}
+  .home h2{font-size:21px;margin-bottom:10px}
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px}
+  .tile,.tile.deal{height:auto;padding:0;background:none;box-shadow:none;color:var(--ink);border-radius:0;overflow:visible;align-items:center;text-align:center}
+  .tile::after{display:none}
+  .tile:hover{transform:none;box-shadow:none}
+  .tile .tt{order:2;margin-top:6px;font:600 13px/1.15 Inter,system-ui,sans-serif;letter-spacing:0}
+  .tile .lg,.tile .ts{display:none}
+  .tile .sh{display:inline}
+  .collage{order:1;flex:none;width:100%;aspect-ratio:1;margin:0;border-radius:16px;background:#fff;border:1px solid var(--line-2);overflow:hidden}
+  .tile.deal .collage{border:2px solid var(--act);background:var(--act-soft)}
+  .tile.deal .tt{color:var(--act)}
+  .collage span:nth-child(1),.collage span:nth-child(3){display:none}
+  .collage span:nth-child(2){inset:0;width:auto;height:auto;margin:0;border-radius:0;box-shadow:none;background:transparent}
+  .collage img{mix-blend-mode:multiply}
+  .collage img{padding:4px}
+}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+</style>
+<script src="t.js" defer></script>
+<script src="alertas.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="logo" href="#" aria-label="Vitrina HN, inicio"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#059669"/><path d="M13 17.5A4.5 4.5 0 0 1 17.5 13h16.6a4.5 4.5 0 0 1 3.2 1.3l12.9 12.9a4.5 4.5 0 0 1 0 6.4L33.6 50.2a4.5 4.5 0 0 1-6.4 0L14.3 37.3a4.5 4.5 0 0 1-1.3-3.2Z" fill="#fff"/><circle cx="22.5" cy="22.5" r="3.6" fill="#059669"/><path d="M25 35.5l5.5 5.5 11-11" fill="none" stroke="#059669" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Vitrina<span>HN</span></a>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Busca producto, marca o modelo" autocomplete="off" aria-label="Buscar productos">
+    </div>
+    <div class="top-actions">
+      <a class="hbtn" href="#ofertas" id="navDeals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span class="lbl">Ofertas</span></a>
+      <a class="hbtn" href="#alertas" id="navAlerts" aria-label="Mis alertas de precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="lbl">Alertas</span></a>
+      <a class="hbtn" href="#favoritos" id="navFavs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.7 4.5c2.1 0 3.6 1.1 5.3 3 1.7-1.9 3.2-3 5.3-3 3.7 0 5.8 3.7 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span class="lbl">Favoritos</span><span class="badge" id="favCount" hidden></span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="cats" aria-label="Categorías">
+  <div class="wrap catwrap">
+    <button class="tabarrow l" id="tabL" aria-label="Ver categorías anteriores" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <button class="tabarrow r" id="tabR" aria-label="Ver más categorías" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+</nav>
+
+<div class="wrap layout" id="layout">
+  <main>
+    <div class="fbar" id="fbar">
+      <div class="fchips" id="filters"></div>
+      <select class="sort" id="sort" aria-label="Ordenar">
+        <option value="rel">Más relevantes</option>
+        <option value="asc">Menor precio</option>
+        <option value="desc">Mayor precio</option>
+        <option value="off">Mayor descuento</option>
+        <option value="drop">Bajaron de precio</option>
+        <option value="multi">En más tiendas</option>
+      </select>
+    </div>
+    <div class="intro" id="intro" hidden><h1>¿Dónde está más barato en Honduras?</h1><p>Compara el precio del mismo producto en Diunsa, La Curacao, Walmart, Elektra, Lady Lee, Gallo más Gallo y más tiendas, con su historial de precios.</p></div>
+    <section class="home" id="home" hidden aria-label="Explora por categoría"></section>
+    <div class="toolbar" id="toolbar">
+      <h2 id="title">Todos los productos</h2>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+    <p class="didyou" id="didyou" hidden></p>
+    <div class="pills" id="pills" hidden></div>
+    <div class="grid" id="grid"><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div><div class="skel" aria-hidden="true"></div></div>
+    <button class="more" id="more" hidden>Ver más productos</button>
+    <div class="deals" id="deals" hidden></div>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><span id="updated"></span></p>
+    <p class="legal" data-nosnippet>Vitrina HN es un sitio independiente y no está afiliado a ninguna de las tiendas. Los precios son referenciales: el precio válido es el que muestra la tienda al comprar. Marcas y fotos pertenecen a sus dueños.</p>
+    <nav class="fcats" aria-label="Categorías"><a href="celulares/">Celulares</a> · <a href="laptops/">Laptops</a> · <a href="tablets/">Tablets</a> · <a href="televisores/">Televisores</a> · <a href="monitores/">Monitores</a> · <a href="impresoras/">Impresoras</a> · <a href="smartwatches/">Relojes inteligentes</a> · <a href="audifonos/">Audífonos</a> · <a href="audio/">Bocinas y audio</a> · <a href="consolas/">Consolas</a> · <a href="videojuegos/">Juegos y controles</a> · <a href="refrigeradoras/">Refrigeradoras</a> · <a href="lavadoras/">Lavadoras</a> · <a href="estufas/">Estufas</a> · <a href="microondas/">Microondas</a> · <a href="aires/">Aires acondicionados</a> · <a href="camas/">Camas</a> · <a href="freidoras/">Freidoras de aire</a> · <a href="licuadoras/">Licuadoras y cafeteras</a> · <a href="motos/">Motos</a> · <a href="accesorios/">Cargadores y cables</a> · <a href="computadoras/">Computadoras de escritorio</a> · <a href="perifericos/">Mouse y teclados</a> · <a href="almacenamiento/">Memorias USB y discos</a> · <a href="componentes/">Componentes de PC</a> · <a href="redes/">Routers</a> · <a href="camaras/">Cámaras y seguridad</a> · <a href="sillas/">Sillas de oficina y gamer</a></nav>
+    <p class="flinks"><a href="mas-barato/">¿Dónde está más barato?</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="aviso-legal.html#contacto">Contacto</a> · <a href="mailto:info@vitrina.hn">info@vitrina.hn</a></p>
+  </div>
+</footer>
+
+<dialog class="sheet" id="sheet" aria-labelledby="shTitle"></dialog>
+<dialog class="sheet" id="cmpDlg" aria-label="Comparar productos"></dialog>
+<div class="cbar" id="cbar" hidden><span class="ct" id="cbarText"></span><button class="go" id="cbarGo">Comparar</button><button class="x" id="cbarClear">Quitar</button></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(async function(){
+  const $ = (s, r=document) => r.querySelector(s);
+  // Catálogo: se pide siempre la versión del servidor (si no cambió, responde rápido sin bajarla de nuevo).
+  // Si tarda, se muestra al instante la copia guardada en el navegador; cuando llega la nueva, la página se
+  // actualiza sola si la persona aún no empezó a usarla, y si ya la está usando, la nueva queda lista para la próxima visita.
+  let data;
+  const CAT = 'catalog.json', cacheOpen = () => (self.caches ? caches.open('vh-cat') : Promise.reject());
+  const fresh = fetch(CAT, {cache:'no-cache'}).then(async (r) => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const copy = r.clone(); await cacheOpen().then(c => c.put(CAT, copy)).catch(() => {});
+    return r.json();
+  });
+  fresh.catch(() => {});
+  let cached = null;
+  try { const r = await cacheOpen().then(c => c.match(CAT)); if (r) cached = await r.json(); } catch {}
+  const stale = cached && Date.now() - new Date(cached.updated) > 18 * 3600e3;
+  data = cached ? await Promise.race([fresh, new Promise(r => setTimeout(r, stale ? 6000 : 1500))]).catch(() => null) || cached : null;
+  if (data === cached && cached) {
+    let used = false;
+    const mark = () => { used = true; };
+    addEventListener('pointerdown', mark, { once: true, capture: true }); addEventListener('keydown', mark, { once: true, capture: true });
+    addEventListener('scroll', () => { if (scrollY > 150) used = true; }, { passive: true });
+    fresh.then(d => { if (d.updated !== cached.updated && !used && !location.hash.startsWith('#p/')) location.reload(); }).catch(() => {});
+  }
+  if (!data) {
+    try { data = await fresh; }
+    catch (e) { $('#grid').innerHTML = '<div class="empty"><strong>No se pudo cargar el catálogo</strong>Revisa tu conexión y recarga la página.</div>'; return; }
+  }
+
+  const STORE_IDS = Object.keys(data.stores).filter(id => data.stores[id].count > 0);
+  const storeName = (id) => data.stores[id]?.name || id;
+  const storeList = (ids) => { const n = ids.map(storeName); return n.length > 1 ? n.slice(0,-1).join(', ') + ' y ' + n.at(-1) : n[0]; };
+  const fmt = new Intl.NumberFormat('es-HN', {minimumFractionDigits:0, maximumFractionDigits:2});
+  const norm = (s) => String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/(\d)[,.](?=\d{3}\b)/g,'$1');
+  const esc = (s) => String(s??'').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const money = (n) => { const [i, d] = Number(n).toFixed(2).split('.'); return `<span><span class="cur">L</span>${fmt.format(Number(i))}${d !== '00' ? `<span class="dec">.${d}</span>` : ''}</span>`; };
+  const plain = (n) => 'L ' + fmt.format(Math.round(n));
+  const catName = (id) => data.categories.find(c=>c.id===id)?.name || '';
+  const X = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M7 7l10 10M17 7 7 17"/></svg>';
+  const HEART = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.7 4.5c2.1 0 3.6 1.1 5.3 3 1.7-1.9 3.2-3 5.3-3 3.7 0 5.8 3.7 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg>';
+  const EPOCH = Date.UTC(2026, 0, 1);
+  const TODAY = data.today ?? Math.floor((Date.now() - 6*3600e3 - EPOCH) / 864e5);
+  const dayDate = (d, opts={day:'numeric', month:'short'}) => new Date(EPOCH + d*864e5).toLocaleDateString('es-HN', {...opts, timeZone:'UTC'});
+  const store = { get(k, f){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : f; } catch { return f; } }, set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+
+  // ---- Características que se leen del nombre del producto, por categoría ----
+  const num = (x) => Number(String(x).replace(',', '.'));
+  const storage = (n) => { const m=[...n.matchAll(/(\d+)\s?(gb|tb)\b/g)].map(x=>Number(x[1])*(x[2]==='tb'?1024:1)).filter(v=>v>=32); if(!m.length) return null; const v=Math.max(...m); return v>=1024?'1 TB o más':v+' GB'; };
+  const ram = (n) => { const m=[...n.matchAll(/(\d+)\s?gb/g)].map(x=>Number(x[1])).filter(v=>v>=4&&v<=64); if(!m.length) return null; const v=Math.min(...m); return v<=8?(v<8?'Menos de 8 GB':'8 GB'):v<=16?'16 GB':'32 GB o más'; };
+  const inchV = (n) => { const m=n.match(/(\d{2,3}(?:\.\d)?)\s?(?:"|”|''|pulgadas|pulg\b|in\b|\s?p\b)/) || n.match(/\b(?:tv|televisor|pantalla|monitor)\D{0,25}?\b(\d{2,3})\b/); if(!m) return null; const v=Number(m[1]); return v>=15&&v<=120 ? v : null; };
+  const inches = (n) => { const v=inchV(n); if(!v) return null; return v<=32?'32" o menos':v<=43?'40" a 43"':v<=55?'50" a 55"':v<=65?'58" a 65"':'70" o más'; };
+  const monInches = (n) => { const v=inchV(n); if(!v) return null; return v<=22?'22" o menos':v<=24.5?'23" a 24"':v<=28?'27"':'32" o más'; };
+  const btu = (n) => { let v=null; const ton=n.match(/(\d(?:[.,]\d)?)\s?(?:toneladas?|ton)\b/); const x=n.match(/(\d{4,5})\s?btu/);
+    const m=n.match(/(\d{1,2})000\s?btu/)||n.match(/(\d{1,2})\s?(?:mil|k)\s?btu/)||n.match(/\b(\d{1,2})\s?btu/)||n.match(/\b(\d{1,2})k\b/);
+    if (m) v=Number(m[1]); else if (x) v=Math.round(Number(x[1])/1000); else if (ton) v=num(ton[1])*12; if(!v) return null; return v<=10?'9,000 BTU':v<=13?'12,000 BTU':v<=19?'18,000 BTU':v<=25?'24,000 BTU':'30,000 BTU o más'; };
+  const feet = (n) => { const m=n.match(/(\d{1,2}(?:[.,]\d)?)\s?(?:pies|pie\b|ft|cu|')/); if(!m) return null; const v=num(m[1]); if(v<2||v>40) return null; return v<=10?'Hasta 10 pies':v<=14?'11 a 14 pies':v<=20?'15 a 20 pies':'21 pies o más'; };
+  const kilos = (n) => { let m=n.match(/(\d{2})\s?(?:kg|kilos)\b/); let v=m?Number(m[1]):null; if(!v){const l=n.match(/(\d{2})\s?(?:lb|lbs|libras)\b/); if(l) v=Math.round(Number(l[1])/2.2);} if(!v||v<5) return null; return v<=15?'Hasta 15 kg':v<=20?'16 a 20 kg':v<=25?'21 a 25 kg':'26 kg o más'; };
+  const cc = (n) => { const m=n.match(/(\d{2,4})\s?cc\b/) || n.match(/\b(?:[a-z]{1,4})\s?-?(1[0-9]{2}|2[0-9]{2}|[5-9]0)\b/); if(!m) return null; const v=Number(m[1]); if(v<49||v>1500) return null; return v<=125?'Hasta 125 cc':v<=200?'126 a 200 cc':'Más de 200 cc'; };
+  const pick = (pairs) => (n) => { for (const [re, label] of pairs) if (re.test(n)) return label; return null; };
+  const PLAT = pick([[/switch\s*2|ns2/,'Switch 2'],[/ps5|playstation\s*5|dualsense/,'PlayStation 5'],[/ps4|playstation\s*4|dualshock/,'PlayStation 4'],[/xbox/,'Xbox'],[/switch|nintendo|joy-?con/,'Switch'],[/\bpc\b/,'PC']]);
+  const FACETS = {
+    celulares: [{ id:'cap', label:'Almacenamiento', fn:storage, order:['64 GB','128 GB','256 GB','512 GB','1 TB o más'] }],
+    tablets:   [{ id:'cap', label:'Almacenamiento', fn:storage, order:['64 GB','128 GB','256 GB','512 GB','1 TB o más'] }],
+    laptops:   [{ id:'ram', label:'Memoria RAM', fn:ram, order:['Menos de 8 GB','8 GB','16 GB','32 GB o más'] }],
+    monitores: [
+      { id:'size', label:'Tamaño', fn:monInches, order:['22" o menos','23" a 24"','27"','32" o más'] },
+      { id:'use', label:'Uso', fn:(n)=>/gam|1[4-9]\dhz|2[0-9]\dhz|ms\b.*hz|\b(144|165|170|180|200|240)\s?hz/.test(n)?'Gaming':'Oficina y hogar', order:['Oficina y hogar','Gaming'] },
+    ],
+    impresoras: [{ id:'tipo', label:'Tipo', fn:pick([[/laser|láser/,'Láser'],[/tinta continua|flujo continuo|ecotank|ink ?tank|smart ?tank|sistema continuo|megatank/,'Tinta continua'],[/matricial|punto de venta|termica|\bpos\b|ticket/,'Punto de venta'],[/./,'Inyección de tinta']]), order:['Tinta continua','Inyección de tinta','Láser','Punto de venta'] }],
+    smartwatches: [{ id:'tipo', label:'Tipo', fn:pick([[/band|pulsera/,'Pulseras'],[/./,'Relojes']]), order:['Relojes','Pulseras'] }],
+    accesorios: [{ id:'tipo', label:'Tipo', fn:pick([[/power ?bank|bateria (portatil|externa)/,'Power banks'],[/cargador|carga/,'Cargadores'],[/hub|adaptador/,'Adaptadores y hubs'],[/cable/,'Cables']]), order:['Cargadores','Cables','Power banks','Adaptadores y hubs'] }],
+    televisores: [
+      { id:'size', label:'Tamaño', fn:inches, order:['32" o menos','40" a 43"','50" a 55"','58" a 65"','70" o más'] },
+      { id:'res', label:'Resolución', fn:pick([[/\b8k\b/,'8K'],[/\b4k\b|uhd/,'4K'],[/fhd|full hd|1080/,'Full HD'],[/\bhd\b/,'HD']]), order:['HD','Full HD','4K','8K'] },
+    ],
+    audio: [{ id:'tipo', label:'Tipo', fn:pick([[/barra/,'Barras de sonido'],[/minicomponente|mini componente|equipo de sonido|sistema de (audio|sonido)|teatro|home theater/,'Equipos de sonido'],[/parlante|bocina|altavoz|speaker|partybox/,'Bocinas']]), order:['Bocinas','Barras de sonido','Equipos de sonido'] }],
+    audifonos: [{ id:'tipo', label:'Conexión', fn:pick([[/inalambric|bluetooth|wireless|tws|true wireless|airpods|buds|bt\b/,'Inalámbricos'],[/./,'Con cable']]), order:['Inalámbricos','Con cable'] }],
+    consolas: [{ id:'plat', label:'Plataforma', fn:pick([[/playstation|ps5|ps4|portal/,'PlayStation'],[/nintendo|switch/,'Nintendo'],[/xbox/,'Xbox']]), order:['PlayStation','Nintendo','Xbox'] }],
+    videojuegos: [
+      { id:'plat', label:'Plataforma', fn:PLAT, order:['PlayStation 5','PlayStation 4','Switch 2','Switch','Xbox','PC'] },
+      { id:'tipo', label:'Tipo', fn:pick([[/control|dualsense|dualshock|joy-?con|mando|gamepad/,'Controles'],[/headset|audifono|auricular/,'Audífonos'],[/volante|vr|portal|adaptador|estacion|base/,'Otros accesorios'],[/./,'Juegos']]), order:['Juegos','Controles','Audífonos','Otros accesorios'] },
+    ],
+    refrigeradoras: [
+      { id:'tipo', label:'Tipo', fn:pick([[/congelador|freezer/,'Congeladores'],[/side by side|sbs|french door|cross door/,'Dos puertas laterales'],[/frigobar|minibar|compact/,'Frigobares'],[/refri/,'Refrigeradoras']]), order:['Refrigeradoras','Dos puertas laterales','Congeladores','Frigobares'] },
+      { id:'size', label:'Tamaño', fn:feet, order:['Hasta 10 pies','11 a 14 pies','15 a 20 pies','21 pies o más'] },
+    ],
+    lavadoras: [
+      { id:'tipo', label:'Tipo', fn:pick([[/centro de lavado|lavadora.*secadora|torre/,'Centros de lavado'],[/secadora/,'Secadoras'],[/lavadora/,'Lavadoras']]), order:['Lavadoras','Secadoras','Centros de lavado'] },
+      { id:'kg', label:'Capacidad', fn:kilos, order:['Hasta 15 kg','16 a 20 kg','21 a 25 kg','26 kg o más'] },
+    ],
+    estufas: [{ id:'tipo', label:'Tipo', fn:pick([[/electric|vitroceram|induccion/,'Eléctricas'],[/gas/,'De gas']]), order:['De gas','Eléctricas'] }],
+    aires: [
+      { id:'btu', label:'Capacidad', fn:btu, order:['9,000 BTU','12,000 BTU','18,000 BTU','24,000 BTU','30,000 BTU o más'] },
+      { id:'inv', label:'Tecnología', fn:pick([[/inverter/,'Inverter'],[/portatil/,'Portátil'],[/./,'Convencional']]), order:['Inverter','Convencional','Portátil'] },
+    ],
+    camas: [{ id:'size', label:'Tamaño', fn:pick([[/king/,'King'],[/queen/,'Queen'],[/matrimonial|full/,'Matrimonial'],[/individual|twin|imperial|semi/,'Individual']]), order:['Individual','Matrimonial','Queen','King'] }],
+    licuadoras: [{ id:'tipo', label:'Tipo', fn:pick([[/cafetera|espresso|percolador|cafe/,'Cafeteras'],[/batidora/,'Batidoras'],[/procesador|extractor/,'Procesadores y extractores'],[/licuadora|blender|nutribullet/,'Licuadoras']]), order:['Licuadoras','Cafeteras','Batidoras','Procesadores y extractores'] }],
+    perifericos: [
+      { id:'tipo', label:'Tipo', fn:pick([[/combo|kit|teclado y mouse|mouse y teclado/,'Combos teclado y mouse'],[/teclado|keyboard/,'Teclados'],[/webcam|camara web/,'Webcams'],[/mouse ?pad|mousepad|alfombrilla|almohadilla/,'Mouse pads'],[/microfono/,'Micrófonos'],[/mouse|raton/,'Mouse'],[/./,'Otros']]), order:['Mouse','Teclados','Combos teclado y mouse','Webcams','Mouse pads','Micrófonos','Otros'] },
+      { id:'con', label:'Conexión', fn:pick([[/inalambric|wireless|bluetooth|2\.4 ?g|\bbt\b/,'Inalámbricos'],[/alambric|usb|cable/,'Con cable']]), order:['Inalámbricos','Con cable'] },
+    ],
+    almacenamiento: [
+      { id:'tipo', label:'Tipo', fn:pick([[/ssd|solido|nvme|m\.2/,'SSD'],[/disco|hdd/,'Discos duros'],[/micro ?sd|tarjeta|\bsd\b/,'Tarjetas de memoria'],[/usb|flash|pendrive|memoria/,'Memorias USB']]), order:['Memorias USB','Tarjetas de memoria','SSD','Discos duros'] },
+      { id:'cap', label:'Capacidad', fn:(n)=>{ const m=[...n.matchAll(/(\d+)\s?(gb|tb)\b/g)].map(x=>Number(x[1])*(x[2]==='tb'?1024:1)); if(!m.length) return null; const v=Math.max(...m); return v<=64?'64 GB o menos':v<=256?'128 a 256 GB':v<512?'Hasta 500 GB':v<=1024?'512 GB a 1 TB':'Más de 1 TB'; }, order:['64 GB o menos','128 a 256 GB','Hasta 500 GB','512 GB a 1 TB','Más de 1 TB'] },
+    ],
+    componentes: [{ id:'tipo', label:'Tipo', fn:pick([[/tarjeta (de )?(video|grafica)|geforce|rtx|radeon|\bgpu\b/,'Tarjetas de video'],[/procesador|ryzen|core i\d|intel core/,'Procesadores'],[/memoria ram|ddr\d|\bram\b|sodimm/,'Memoria RAM'],[/fuente/,'Fuentes de poder'],[/madre|motherboard/,'Tarjetas madre'],[/case|gabinete/,'Cases'],[/disipador|enfriamiento|enfriador|ventilador|pasta/,'Enfriamiento'],[/./,'Otros']]), order:['Tarjetas de video','Procesadores','Memoria RAM','Tarjetas madre','Fuentes de poder','Cases','Enfriamiento','Otros'] }],
+    redes: [{ id:'tipo', label:'Tipo', fn:pick([[/extensor|repetidor|mesh/,'Extensores y mesh'],[/adaptador|tarjeta de red/,'Adaptadores'],[/switch/,'Switches'],[/router|enrutador|modem|access point|punto de acceso/,'Routers']]), order:['Routers','Extensores y mesh','Adaptadores','Switches'] }],
+    camaras: [{ id:'tipo', label:'Tipo', fn:pick([[/dron/,'Drones'],[/accion|gopro|deportiva/,'Cámaras de acción'],[/timbre|portero|cerradura/,'Timbres y cerraduras'],[/seguridad|vigilancia|\bip\b|wi-?fi|domo|dvr|nvr|kit/,'Seguridad'],[/./,'Fotografía']]), order:['Seguridad','Timbres y cerraduras','Cámaras de acción','Drones','Fotografía'] }],
+    motos: [
+      { id:'cc', label:'Cilindraje', fn:cc, order:['Hasta 125 cc','126 a 200 cc','Más de 200 cc'] },
+      { id:'tipo', label:'Tipo', fn:pick([[/cuatrimoto|atv/,'Cuatrimotos'],[/mototaxi|torito/,'Mototaxis'],[/scooter|motoneta|automatic/,'Scooters'],[/doble proposito|enduro|todo terreno/,'Doble propósito'],[/deportiv|sport/,'Deportivas'],[/./,'Trabajo y ciudad']]), order:['Trabajo y ciudad','Scooters','Deportivas','Doble propósito','Cuatrimotos','Mototaxis'] },
+    ],
+  };
+
+  // ---- Índice de productos ----
+  const pkey = (p) => p.o.map(o=>o.k).filter(Boolean).sort()[0] || p.id;
+  const byKey = new Map();
+  const vocab = new Map();
+  for (const p of data.products) {
+    p.key = pkey(p);
+    for (const o of p.o) if (o.k) byKey.set(o.k, p);
+    byKey.set(p.id, p);
+    p._n = norm(p.n);
+    p._t = norm(`${p.b} ${p.n} ${p.on || ''} ${p.m} ${catName(p.c)}`);
+    p._f = {};
+    for (const f of FACETS[p.c] || []) { const v = f.fn(p._n); if (v) p._f[f.id] = v; }
+    for (const w of p._t.split(/[^a-z0-9]+/)) if (w.length >= 3) vocab.set(w, (vocab.get(w)||0) + 1);
+  }
+
+  // ---- Búsqueda tolerante a errores ----
+  const SYN = {
+    tv:['tv','televisor','pantalla'], tele:['tele','tv','pantalla'], television:['televisor','tv','pantalla'], televisores:['televisor','tv','pantalla'], pantalla:['pantalla','televisor','tv','monitor'],
+    refri:['refri'], nevera:['refri'], refrigerador:['refri'], heladera:['refri'], frigobar:['frigobar','refri'],
+    cel:['cel','smartphone','telefono'], telefono:['telefono','celular','smartphone'], movil:['celular','smartphone'], smartphone:['smartphone','celular'],
+    compu:['laptop','computadora','notebook'], computadora:['computadora','laptop','notebook'], notebook:['notebook','laptop'], portatil:['portatil','laptop'],
+    play:['playstation','ps5','ps4'], ps:['playstation','ps5','ps4'], playstation:['playstation','ps5','ps4'], nintendo:['nintendo','switch'], ns2:['switch 2'],
+    aire:['aire'], minisplit:['aire','split'], split:['split','aire'], ac:['aire'],
+    micro:['microondas'], lava:['lava'], audifono:['audifono','auricular','headset','earbuds','buds','airpods'], auricular:['auricular','audifono','headset'], headphones:['audifono','headset'],
+    reloj:['reloj','watch','band'], smartwatch:['watch','reloj'], moto:['moto'], motocicleta:['moto'],
+    bocina:['bocina','parlante','speaker','altavoz'], parlante:['parlante','bocina','speaker'], speaker:['speaker','bocina','parlante'],
+    airfryer:['airfryer','freidora','air fryer'], fryer:['freidora','air fryer'], freidora:['freidora'], impresora:['impresora','multifuncional'], printer:['impresora'],
+    cargador:['cargador','carga'], powerbank:['power bank','powerbank','bateria'], licuadora:['licuadora','blender'], cafetera:['cafetera','espresso'],
+    mouse:['mouse','raton'], raton:['raton','mouse'], teclado:['teclado','keyboard'], keyboard:['keyboard','teclado'], webcam:['webcam','camara web'],
+    pendrive:['memoria usb','usb','flash'], memoria:['memoria','micro sd','usb'], ssd:['ssd','solido'], disco:['disco','ssd','hdd'],
+    router:['router','enrutador'], wifi:['wifi','wi-fi'], extensor:['extensor','repetidor','mesh'], repetidor:['repetidor','extensor'],
+    gpu:['tarjeta de video','geforce','rtx','radeon'], grafica:['grafica','tarjeta de video','geforce','rtx','radeon'], procesador:['procesador','ryzen','intel core'],
+    camara:['camara','webcam'], dron:['dron','drone'], silla:['silla'], gamer:['gamer','gaming'], gaming:['gaming','gamer'], pc:['pc','computadora'],
+    colchon:['colchon','cama'], cama:['cama','colchon'], estufa:['estufa','cocina'], cocina:['cocina','estufa'], control:['control','mando'],
+  };
+  const QSTOP = new Set(['de','del','para','con','el','la','los','las','y','en','un','una','que','por','mas','barato','barata','precio','precios','pulgadas','pulg','pies','btu','marca']);
+  function dist(a, b, max){
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    const m = a.length, n = b.length; let prev2 = null, prev = Array.from({length:n+1}, (_, j) => j);
+    for (let i = 1; i <= m; i++) {
+      const cur = [i]; let rowMin = i;
+      for (let j = 1; j <= n; j++) {
+        let v = Math.min(prev[j] + 1, cur[j-1] + 1, prev[j-1] + (a[i-1] === b[j-1] ? 0 : 1));
+        if (prev2 && i > 1 && j > 1 && a[i-1] === b[j-2] && a[i-2] === b[j-1]) v = Math.min(v, prev2[j-2] + 1);
+        cur.push(v); if (v < rowMin) rowMin = v;
+      }
+      if (rowMin > max) return max + 1;
+      prev2 = prev; prev = cur;
+    }
+    return prev[n];
+  }
+  const fuzzyCache = new Map();
+  function fuzzyWords(t){
+    if (fuzzyCache.has(t)) return fuzzyCache.get(t);
+    const max = t.length >= 8 ? 2 : t.length >= 4 ? 1 : 0;
+    const out = [];
+    if (max) for (const [w, c] of vocab) { const d = dist(t, w, max); if (d <= max) out.push([w, d, c]); }
+    out.sort((a,b) => a[1]-b[1] || b[2]-a[2]);
+    const res = out.slice(0, 12).map(x => x[0]);
+    fuzzyCache.set(t, res);
+    return res;
+  }
+  // Coincidencia desde el inicio de una palabra; si el término tiene números, no puede seguir otro número
+  // (así "ps4" no coincide con el modelo "PS45100"). Lo escrito con números busca también dentro de códigos.
+  const reCache = new Map();
+  const wordRe = (a) => { if (!reCache.has(a)) reCache.set(a, new RegExp(`(^|[^a-z0-9])${a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}${/\d/.test(a) ? '(?![0-9])' : ''}`)); return reCache.get(a); };
+  const hit = (text, a, typed) => typed && /\d/.test(a) && /[a-z]/.test(a) ? text.includes(a) : wordRe(a).test(text);
+  // Convierte la búsqueda en términos; cada término acepta alternativas exactas y, si no hay, parecidas.
+  function compileQuery(q){
+    const toks = norm(q).replace(/(\d)\s?(gb|tb|kg|cc|hz)\b/g, '$1$2').split(/[^a-z0-9+"]+/).filter(t => t && !QSTOP.has(t));
+    return toks.map(t => {
+      const base = [t];
+      if (t.length > 4 && t.endsWith('es')) base.push(t.slice(0, -2));
+      if (t.length > 3 && t.endsWith('s')) base.push(t.slice(0, -1));
+      const alts = [...new Set([...base, ...(SYN[t] || SYN[base.at(-1)] || [])])];
+      const exact = data.products.some(p => alts.some((a, i) => hit(p._t, a, i < base.length)));
+      const fz = exact || /^\d+$/.test(t) ? [] : fuzzyWords(t);
+      return { t, alts, typed: base.length, fuzzy: [...new Set([...fz, ...fz.flatMap(w => SYN[w] || [])])] };
+    });
+  }
+  function scoreQuery(p, terms){
+    let s = 0;
+    for (const term of terms) {
+      if (term.alts.some((a, i) => hit(p._t, a, i < term.typed))) s += 3;
+      else if (term.fuzzy.some(w => hit(p._t, w, false))) s += 1;
+      else return 0;
+    }
+    if (terms[0] && p._n.startsWith(terms[0].t)) s += 1;
+    return s;
+  }
+
+  // ---- Estado y almacenamiento local ----
+  const state = { view:'catalog', q:'', terms:[], cat:'', brands:new Set(), facets:{}, price:'', sort:'rel', multi:false, stock:true, stores:new Set(), shown:48, allBrands:false };
+  let favs = store.get('vh:favs', {});       // clave -> { p: precio al guardar, t: fecha }
+  let cmp = store.get('vh:cmp', []).filter(k => byKey.has(k)).slice(0, 3);
+  const isFav = (p) => p.o.some(o => favs[o.k]) || !!favs[p.key];
+  const favEntry = (p) => favs[p.key] || p.o.map(o=>favs[o.k]).find(Boolean);
+  const inCmp = (p) => cmp.some(k => byKey.get(k) === p);
+
+  // Encabezado
+  $('#updated').textContent = 'Actualizado ' + new Date(data.updated).toLocaleString('es-HN', {weekday:'long', day:'numeric', month:'long', hour:'numeric', minute:'2-digit'});
+  const multiCount = data.products.filter(p=>p.o.length>1).length;
+
+  const offersOf = (p) => p.o.filter(o => (!state.stores.size || state.stores.has(o.s)) && (!state.stock || o.a)).sort((a,b)=>(b.a-a.a)||(a.p-b.p));
+  const allOffers = (p) => [...p.o].sort((a,b)=>(b.a-a.a)||(a.p-b.p));
+  const bestP = (p) => offersOf(p)[0]?.p ?? Infinity;
+  const discount = (o) => o && o.r > o.p ? (o.r - o.p) / o.r : 0;
+  const tracked = (o) => o.f != null ? TODAY - o.f : 0;
+  // Bajada real: el precio de hoy es menor que el más bajo de los 30 días anteriores, o que hace 7 días.
+  // Subida reciente: la oferta (en existencia) que más subió en los últimos 14 días.
+  const riseOf = (p) => p.o.filter(o => o.a && o.v != null && o.p > o.v * 1.02 && o.p < o.v * 1.6 && o.p - o.v >= 100 && TODAY - o.d <= 14).sort((a,b) => (b.p - b.v) - (a.p - a.v))[0];
+  const dropOf = (o) => { const ref = Math.max(o.l ?? 0, o.w ?? 0); return ref > o.p * 1.02 ? ref - o.p : 0; };
+
+  function priceBuckets(list){
+    const ps = list.map(bestP).filter(Number.isFinite).sort((a,b)=>a-b);
+    if (ps.length < 8) return [];
+    const r = (v) => { const step = v > 20000 ? 5000 : v > 5000 ? 1000 : v > 1000 ? 500 : 100; return Math.max(step, Math.round(v/step)*step); };
+    const cuts = [...new Set([0.25,0.5,0.75].map(q => r(ps[Math.floor(q*(ps.length-1))])))];
+    const out = []; let lo = 0;
+    cuts.forEach((c,i) => { out.push({ id:`${lo}-${c}`, label: i===0 ? `Hasta ${plain(c)}` : `${plain(lo)} a ${plain(c)}` }); lo = c; });
+    out.push({ id:`${lo}-`, label:`Más de ${plain(lo)}` });
+    return out;
+  }
+  const priceLabel = (id) => { const [lo, hi] = id.split('-'); return !Number(lo) ? `Hasta ${plain(hi)}` : hi ? `${plain(lo)} a ${plain(hi)}` : `Más de ${plain(lo)}`; };
+
+  // Filtro que puede ignorar un grupo, para contar lo que quedaría al marcar cada opción
+  function matches(p, skip){
+    if (state.view === 'favs' && !isFav(p)) return false;
+    if (skip !== 'cat' && state.cat && p.c !== state.cat) return false;
+    if (skip !== 'brand' && state.brands.size && !state.brands.has(p.b)) return false;
+    for (const [fid, vals] of Object.entries(state.facets)) if (skip !== fid && vals.size && !vals.has(p._f[fid])) return false;
+    const offers = p.o.filter(o => (skip === 'store' || !state.stores.size || state.stores.has(o.s)) && (!state.stock || o.a || state.view === 'favs'));
+    if (!offers.length) return false;
+    if (state.multi && offers.length < 2) return false;
+    if (skip !== 'price' && state.price) { const [lo, hi] = state.price.split('-'); const v = Math.min(...offers.map(o=>o.p)); if (v <= Number(lo) || (hi && v > Number(hi))) return false; }
+    if (state.terms.length && !p._qs) return false;
+    return true;
+  }
+  const countBy = (list, key) => { const c = {}, seen = {}; list.forEach(p => { const fid = p.v || p.key; [].concat(key(p)).forEach(k => { if (!k) return; const s = seen[k] ||= new Set(); if (!s.has(fid)) { s.add(fid); c[k] = (c[k]||0)+1; } }); }); return c; };
+
+  function renderTabs(){
+    const v = state.view; state.view = 'catalog';
+    const base = data.products.filter(p => matches(p, 'cat'));
+    state.view = v;
+    const counts = countBy(base, p => p.c);
+    const tab = (id, name, n) => `<button class="tab" role="tab" aria-selected="${state.view==='catalog' && state.cat===id}" data-c="${id}">${esc(name)}<small>${fmt.format(n)}</small></button>`;
+    $('#tabs').innerHTML = tab('', 'Todo', base.length) + data.categories.filter(c=>counts[c.id]).map(c=>tab(c.id, c.name, counts[c.id])).join('');
+    requestAnimationFrame(updateArrows);
+  }
+  // Flechas para recorrer las categorías cuando no caben en pantalla.
+  const tabsEl = $('#tabs');
+  function updateArrows(){ const max = tabsEl.scrollWidth - tabsEl.clientWidth; $('#tabL').hidden = tabsEl.scrollLeft <= 4; $('#tabR').hidden = max <= 4 || tabsEl.scrollLeft >= max - 4; }
+  tabsEl.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
+  $('#tabL').addEventListener('click', () => tabsEl.scrollBy({ left: -tabsEl.clientWidth * 0.7 }));
+  $('#tabR').addEventListener('click', () => tabsEl.scrollBy({ left: tabsEl.clientWidth * 0.7 }));
+
+  const opt = (g, v, label, n, checked, type='checkbox', extra='') => `<label class="opt${!n && !checked ? ' zero' : ''}"><input type="${type}" name="${g}" data-g="${g}" value="${esc(v)}"${checked?' checked':''}>${extra}<span class="lbl">${esc(label)}</span>${n!=null?`<span class="n">${fmt.format(n)}</span>`:''}</label>`;
+
+  const CARET = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  // Panel de filtro: encabezado fijo (título, Borrar, cerrar), lista con scroll y botón fijo abajo.
+  // Las listas largas (marcas) traen un buscador.
+  const X_SM = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+  function drop(id, label, sel, body, count = 0){
+    const txt = !sel.length ? label : sel.length === 1 ? `${label}: ${sel[0]}` : `${label} (${sel.length})`;
+    const find = count > 12 ? `<input class="pfind" type="search" placeholder="Buscar ${esc(label.toLowerCase())}" data-pfind="${id}" value="${esc(state.pfind?.[id] || '')}" autocomplete="off">` : '';
+    return `<div class="fdrop${state.openDrop === id ? ' open' : ''}" data-drop="${id}"><button class="fchip${sel.length ? ' on' : ''}" data-toggle="${id}" aria-expanded="${state.openDrop === id}">${esc(txt)}${CARET}</button><div class="fpanel" role="dialog" aria-label="${esc(label)}"><div class="phead"><p class="ptitle">${esc(label)}</p>${sel.length ? `<button class="pclear" data-clear-group="${id}">Borrar</button>` : ''}<button class="pclose" data-close-drop aria-label="Cerrar">${X_SM}</button></div>${find}<div class="pbody" data-pbody="${id}">${body}</div><div class="pfoot"><button class="fdone" data-close-drop>Ver ${fmt.format(current.length)} producto${current.length === 1 ? '' : 's'}</button></div></div></div>`;
+  }
+  function renderFilters(){
+    const out = [];
+    for (const f of FACETS[state.cat] || []) {
+      const c = countBy(data.products.filter(p => matches(p, f.id)), p => p._f[f.id]);
+      const vals = f.order.filter(v => c[v] || state.facets[f.id]?.has(v));
+      if (vals.length < 2) continue;
+      out.push(drop(f.id, f.label, [...(state.facets[f.id] || [])], vals.map(v => opt(f.id, v, v, c[v]||0, !!state.facets[f.id]?.has(v))).join(''), vals.length));
+    }
+    const bc = countBy(data.products.filter(p => matches(p, 'brand')), p => p.b);
+    for (const b of state.brands) bc[b] ??= 0;
+    const brands = Object.entries(bc).sort((a,b)=>b[1]-a[1]);
+    if (brands.length > 1) out.push(drop('brand', 'Marca', [...state.brands], brands.map(([b,n]) => opt('brand', b, b, n, state.brands.has(b))).join(''), brands.length));
+    const pb = priceBuckets(data.products.filter(p => matches(p, 'price')));
+    if (pb.length) out.push(drop('price', 'Precio', state.price ? [priceLabel(state.price)] : [], opt('price', '', 'Cualquier precio', null, !state.price, 'radio') + pb.map(b => opt('price', b.id, b.label, null, state.price===b.id, 'radio')).join('')));
+    const sc = countBy(data.products.filter(p => matches(p, 'store')), p => p.o.filter(o=>!state.stock||o.a).map(o=>o.s));
+    out.push(drop('store', 'Tienda', [...state.stores].map(storeName), STORE_IDS.map(id => opt('store', id, data.stores[id].name, sc[id]||0, state.stores.has(id), 'checkbox', `<span class="dot" style="background:var(--s-${id})"></span>`)).join('')));
+    out.push(`<button class="fchip${state.multi ? ' on' : ''}" data-quick="multi">En 2 o más tiendas</button>`);
+    out.push(`<button class="fchip${!state.stock ? ' on' : ''}" data-quick="stock">Incluir agotados</button>`);
+    // Conserva la posición de la lista abierta al volver a dibujar (marcar una opción no te regresa arriba).
+    const openBody = state.openDrop && document.querySelector(`[data-pbody="${state.openDrop}"]`);
+    const keepTop = openBody ? openBody.scrollTop : 0;
+    $('#filters').innerHTML = out.join('');
+    if (state.openDrop) { const b = document.querySelector(`[data-pbody="${state.openDrop}"]`); if (b) b.scrollTop = keepTop; }
+    for (const [id, q] of Object.entries(state.pfind || {})) applyPfind(id, q);
+  }
+  function applyPfind(id, q){
+    const body = document.querySelector(`[data-pbody="${id}"]`); if (!body) return;
+    const t = norm(q || '');
+    body.querySelectorAll('label.opt').forEach(l => { l.hidden = !!t && !norm(l.textContent).includes(t) && !l.querySelector('input').checked; });
+  }
+
+  function activeFilters(){
+    const a = [];
+    for (const f of FACETS[state.cat] || []) for (const v of state.facets[f.id] || []) a.push({ g:f.id, v, label:v });
+    for (const b of state.brands) a.push({ g:'brand', v:b, label:b });
+    if (state.price) a.push({ g:'price', v:state.price, label:priceLabel(state.price) });
+    for (const s of state.stores) a.push({ g:'store', v:s, label:storeName(s) });
+    if (state.multi) a.push({ g:'multi', v:'1', label:'En 2 o más tiendas' });
+    return a;
+  }
+  function renderPills(){
+    const a = state.view === 'catalog' ? activeFilters() : [];
+    $('#pills').hidden = !a.length;
+    $('#pills').innerHTML = a.map(f => `<button class="pill" data-g="${f.g}" data-v="${esc(f.v)}" aria-label="Quitar ${esc(f.label)}">${esc(f.label)}${X}</button>`).join('') + (a.length > 1 ? '<button class="clear" id="clearAll">Quitar todo</button>' : '');
+  }
+
+  // ---- Señales de precio (historial) ----
+  function flagsOf(p, best){
+    const out = [];
+    if (!best) return out;
+    const drop = dropOf(best);
+    if (drop) out.push(['', `Bajó ${plain(drop)}`]);
+    else if (best.v > best.p * 1.01 && TODAY - best.d <= 14) out.push(['', `Bajó ${plain(best.v - best.p)}`, `Antes ${plain(best.v)} en ${storeName(best.s)} (cambió el ${dayDate(best.d)}).`]);
+    else if (best.l != null && best.p < best.l) out.push(['', 'Precio más bajo en 30 días']);
+    if (best.r > best.p * 1.01 && tracked(best) >= 7 && best.l != null && best.p >= best.l) out.push(['warn', 'Sin rebaja real', `Muestra un precio "antes" de ${plain(best.r)}, pero no está más barato que en los últimos ${Math.min(30, tracked(best))} días.`]);
+    const up = riseOf(p);
+    if (up) out.push(['warn', `Subió ${plain(up.p - up.v)} en ${storeName(up.s)}`, `Antes ${plain(up.v)}, ahora ${plain(up.p)} (cambió el ${dayDate(up.d)}).`]);
+    const fe = favEntry(p);
+    if (fe && best.p < fe.p - 1) out.push(['', `Bajó ${plain(fe.p - best.p)} desde que lo guardaste`]);
+    return out;
+  }
+  const flagsHtml = (fl) => fl.length ? `<div class="flags">${fl.map(([c, t, tip]) => `<span class="flag ${c}"${tip ? ` title="${esc(tip)}"` : ''}>${esc(t)}</span>`).join('')}</div>` : '';
+  const planText = (o) => o?.q ? `o ${o.q.n} cuotas de ${plain(o.p / o.q.n)} sin intereses en ${storeName(o.s)}` : '';
+
+  const imgSrc = (p) => p.t ? `thumbs/${p.t}.webp` : p.i;
+  const imgTag = (src, initial, extra='') => src ? `<img src="${esc(src)}" alt="" ${extra} decoding="async" referrerpolicy="no-referrer" onerror="this.outerHTML='<span class=&quot;ph&quot;>${initial}</span>'">` : `<span class="ph">${initial}</span>`;
+  const plink = (p) => '#p/' + encodeURIComponent(p.key);
+  // Igual que src/seo.mjs: nombre + huella corta del id.
+  const fnv = (s) => { let h = 0x811c9dc5; for (const c of String(s)) { h ^= c.codePointAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36); };
+  const slugify = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/["”″]/g, '-pulgadas').replace(/\+/g, '-plus').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80).replace(/-+$/, '');
+  const productSlug = (p) => `${slugify(p.n)}-${fnv(p.id)}`;
+
+  // Colores: muestra de color por nombre.
+  const SWATCH = { 'Negro':'#16181b','Blanco':'#ffffff','Blanco estelar':'#f4efe6','Gris':'#9aa1a9','Grafito':'#4a4f55','Plata':'#c9cdd2','Azul':'#2563eb','Azul marino':'#1e3a8a','Azul cobalto':'#1d4ed8','Celeste':'#7dd3fc','Índigo':'#4338ca','Zafiro':'#1e40af','Rojo':'#dc2626','Rojo volcánico':'#b91c1c','Vino':'#7f1d1d','Rosado':'#f9a8d4','Fucsia':'#db2777','Coral':'#fb7185','Verde':'#16a34a','Menta':'#a7f3d0','Jade':'#10b981','Verde oliva':'#65743a','Oliva':'#65743a','Verde salvia':'#9caf88','Verde azulado':'#0f766e','Morado':'#7c3aed','Violeta':'#8b5cf6','Lila':'#c4b5fd','Lavanda':'#c7b9f0','Dorado':'#d4a72c','Champagne':'#e8d9b5','Bronce':'#a16207','Cobre':'#b45309','Amarillo':'#facc15','Naranja':'#f97316','Café':'#7c4a1e','Beige':'#e7d8c0','Crema':'#f3ead3','Arena':'#d6c4a0','Turquesa':'#2dd4bf','Aqua':'#67e8f9','Titanio':'#b8b2a7','Camuflaje':'#556b2f','Medianoche':'#1f2937','Cósmico':'#5b21b6','Galáctico':'#6d28d9','Neón':'#22d3ee','Acero inoxidable':'#c0c4c8' };
+  const swatch = (c) => SWATCH[String(c).split(' / ')[0]] || '#cbd2d9';
+  const famOf = new Map();       // familia -> integrantes visibles con los filtros actuales
+  // Variantes de un mismo producto: capacidad (almacenamiento y RAM) y color, en una sola tarjeta.
+  const famSort = (a, b) => ((a.cs||0) - (b.cs||0)) || String(a.cl).localeCompare(String(b.cl), 'es');
+  function colorsHtml(p, fam, mode){
+    if (!fam || fam.length < 2) return '';
+    const link = (m, inner, cls, extra = '') => mode === 'sheet'
+      ? `<a class="${cls}" href="${plink(m)}" ${extra} aria-pressed="${m === p}">${inner}</a>`
+      : `<button class="${cls}" data-swap="${esc(m.key)}" ${extra} aria-pressed="${m === p}">${inner}</button>`;
+    let html = '';
+    const caps = [...new Set(fam.map(m => m.cp).filter(Boolean))];
+    if (caps.length > 1) {
+      // Al cambiar de capacidad se conserva el color si existe en esa capacidad.
+      const target = (cp) => fam.find(m => m.cp === cp && m.cl === p.cl) || fam.find(m => m.cp === cp);
+      html += `<div class="caps">${caps.map(cp => { const m = target(cp); return link(m, esc(cp), 'cap'); }).join('')}</div>`;
+    }
+    const sameCap = caps.length > 1 ? fam.filter(m => m.cp === p.cp) : fam;
+    const colored = sameCap.filter(m => m.cl);
+    if (colored.length > 1) {
+      const max = 6, shown = colored.slice(0, max);
+      html += `<div class="colors"><span class="clabel">${esc(p.cl || 'Color')}</span>${shown.map(m => link(m, '', 'cdot', `style="--c:${swatch(m.cl)}" aria-label="${esc(m.cl)}" title="${esc(m.cl)}"`)).join('')}${colored.length > max ? `<span class="cmore">+${colored.length - max}</span>` : ''}</div>`;
+    }
+    return html;
+  }
+
+  function card(p){
+    let offers = state.view === 'favs' ? allOffers(p) : offersOf(p);
+    if (!offers.length) offers = allOffers(p);
+    const best = offers[0];
+    const initial = esc((p.b||catName(p.c)).slice(0,1));
+    const was = best.r > best.p ? `<span class="was">${plain(best.r)}</span>` : '';
+    const spread = offers.length > 1 ? offers[offers.length-1].p - best.p : 0;
+    const plan = planText(offers.find(o => o.q));
+    return `<article class="p" data-key="${esc(p.key)}">
+      <button class="favbtn" data-fav="${esc(p.key)}" aria-pressed="${isFav(p)}" aria-label="${isFav(p)?'Quitar de':'Guardar en'} favoritos">${HEART}</button>
+      <a class="img" href="${plink(p)}" tabindex="-1" aria-hidden="true">${imgTag(imgSrc(p), initial, 'loading="lazy"')}</a>
+      <div class="body"><span class="b">${esc(p.b || catName(p.c))}</span><a class="n" href="${plink(p)}" title="${esc(p.n)}">${esc(p.n)}</a>${p.m?`<span class="m">Modelo ${esc(p.m)}</span>`:''}</div>
+      <div class="tag${best.a?'':' out'}"><div class="price">${money(best.p)}${was}</div><div class="where">${offers.length>1?'Más barato en ':'En '}<b>${esc(storeName(best.s))}</b>${best.a?'':' (agotado)'}</div></div>
+      ${colorsHtml(p, famOf.get(p.v))}
+      ${flagsHtml(flagsOf(p, best))}
+      ${spread>0?`<div class="save">Ahorras ${plain(spread)}</div>`:''}
+      ${plan?`<div class="plan">${esc(plan)}</div>`:''}
+      <div class="cardfoot"><label class="cmp"><input type="checkbox" data-cmp="${esc(p.key)}"${inCmp(p)?' checked':''}>Comparar</label>${p.o.length > 1 ? `<a class="nst" href="${plink(p)}">${p.o.length} tiendas<span aria-hidden="true"> ›</span></a>` : ''}</div>
+    </article>`;
+  }
+
+  let current = [];
+  function computeList(){
+    const list = data.products.filter(p => matches(p));
+    if (state.sort === 'asc') list.sort((a,b)=>bestP(a)-bestP(b));
+    else if (state.sort === 'desc') list.sort((a,b)=>bestP(b)-bestP(a));
+    else if (state.sort === 'off') list.sort((a,b)=>discount(offersOf(b)[0])-discount(offersOf(a)[0]));
+    else if (state.sort === 'drop') list.sort((a,b)=>(dropOf(offersOf(b)[0]||{})/bestP(b))-(dropOf(offersOf(a)[0]||{})/bestP(a)) || bestP(a)-bestP(b));
+    else if (state.sort === 'multi') list.sort((a,b)=>offersOf(b).length-offersOf(a).length || bestP(a)-bestP(b));
+    else if (state.terms.length) list.sort((a,b)=>(b._qs-a._qs) || (offersOf(b).length-offersOf(a).length));
+    // Los colores de un mismo producto se muestran en una sola tarjeta (la mejor ubicada de la familia).
+    famOf.clear();
+    const out = [];
+    for (const p of list) {
+      if (!p.v) { out.push(p); continue; }
+      if (!famOf.has(p.v)) { famOf.set(p.v, []); out.push(p); }
+      famOf.get(p.v).push(p);
+    }
+    for (const f of famOf.values()) f.sort(famSort);
+    return out;
+  }
+  function renderGrid(append){
+    const grid = $('#grid');
+    const n = current.length;
+    $('#title').textContent = state.view === 'favs' ? 'Tus favoritos' : state.cat ? catName(state.cat) : (state.q ? 'Resultados' : 'Todos los productos');
+    $('#count').textContent = `${fmt.format(n)} producto${n===1?'':'s'}`;
+    if (!n) {
+      grid.innerHTML = state.view === 'favs'
+        ? `<div class="empty"><strong>Aún no tienes favoritos</strong>Toca el corazón de un producto para guardarlo aquí. Te avisaremos cuando baje de precio.</div>`
+        : `<div class="empty"><strong>Sin resultados</strong>Prueba con otra palabra o quita algún filtro.</div>`;
+      $('#more').hidden = true; return;
+    }
+    const shown = Math.min(state.shown, n);
+    if (append) grid.insertAdjacentHTML('beforeend', current.slice(grid.children.length, shown).map(card).join(''));
+    else grid.innerHTML = current.slice(0, shown).map(card).join('');
+    const left = n - shown;
+    $('#more').hidden = left <= 0;
+    $('#more').textContent = `Ver ${fmt.format(Math.min(48, left))} productos más (quedan ${fmt.format(left)})`;
+  }
+  function renderDidYou(){
+    const fixes = state.terms.filter(t => t.fuzzy.length && !data.products.some(p => p._qs && t.alts.some((a, i) => hit(p._t, a, i < t.typed))));
+    const el = $('#didyou');
+    if (!fixes.length || !current.length) { el.hidden = true; return; }
+    el.hidden = false;
+    el.innerHTML = 'Mostrando resultados para ' + fixes.map(t => `<b>${esc(t.fuzzy[0])}</b>`).join(', ') + ` (buscaste “${esc(fixes.map(t=>t.t).join(' '))}”).`;
+  }
+  function applyQuery(){
+    state.terms = state.q.trim() ? compileQuery(state.q) : [];
+    for (const p of data.products) p._qs = state.terms.length ? scoreQuery(p, state.terms) : 0;
+    // Si lo buscado no está en la categoría abierta pero sí en otras, se busca en todas.
+    if (state.terms.length && state.cat && !data.products.some(p => p._qs && p.c === state.cat) && data.products.some(p => p._qs)) {
+      state.cat = ''; resetFilters(); history.replaceState(null, '', location.pathname + location.search);
+    }
+  }
+  // ---- Portada: tarjetas por categoría (solo en "Todos", sin búsqueda ni filtros) ----
+  const HOME_CATS = [
+    ['celulares','Lo más buscado','Celulares'], ['televisores','','TV'], ['laptops','','Laptops'], ['tablets','','Tablets'],
+    ['audifonos','','Audífonos'], ['smartwatches','','Relojes'], ['consolas','','Consolas'], ['refrigeradoras','','Refris'],
+    ['lavadoras','','Lavadoras'], ['aires','','Aires'], ['motos','','Motos'], ['perifericos','','Mouse y teclados'], ['almacenamiento','','Memorias y discos'],
+  ];
+  let homeHtml = '';
+  function buildHome(){
+    const by = {};
+    for (const p of data.products) (by[p.c] ||= []).push(p);
+    const pics = (list) => {
+      const out = [], seenB = new Set();
+      for (const p of list) {
+        if (!p.t || !p.o.some(o => o.a) || seenB.has(p.b)) continue;
+        seenB.add(p.b); out.push(p);
+        if (out.length === 3) break;
+      }
+      return out.map(p => `<span><img src="thumbs/${p.t}.webp" alt="" loading="lazy" decoding="async"></span>`).join('');
+    };
+    const tile = (href, title, sub, list, cls = '', short = title) => `<a class="tile${cls}" href="${href}" aria-label="${esc(title)}"><span class="tt"><span class="lg">${esc(title)}</span><span class="sh">${esc(short)}</span></span><span class="ts">${esc(sub)}</span><span class="collage" aria-hidden="true">${pics(list)}</span></a>`;
+    // Ofertas: el mismo producto con la mayor diferencia entre tiendas.
+    const gaps = [];
+    for (const p of data.products) {
+      const av = p.o.filter(o => o.a).sort((a,b) => a.p - b.p);
+      if (av.length < 2) continue;
+      const hi = av[av.length-1].p, lo = av[0].p;
+      if (hi - lo >= 300 && (hi - lo) / hi >= 0.12) gaps.push([p, hi - lo]);
+    }
+    gaps.sort((a,b) => b[1] - a[1]);
+    const tiles = [gaps.length ? tile('#ofertas', 'Ofertas', 'Mismo producto, más barato', gaps.map(x => x[0]), ' deal') : ''];
+    for (const [id, sub, short] of HOME_CATS) {
+      const list = by[id];
+      if (!list?.length) continue;
+      const n = new Set(list.map(p => p.v || p.key)).size;
+      const min = Math.min(...list.flatMap(p => p.o.filter(o => o.a).map(o => o.p)));
+      const s = sub || (isFinite(min) ? `Desde L ${fmt.format(Math.round(min))}` : `${n} productos`);
+      tiles.push(tile('#' + id, catName(id), s, list, '', short));
+    }
+    homeHtml = `<h2>Explora por categoría</h2><div class="tiles">${tiles.join('')}</div>`;
+  }
+  function renderHome(show){
+    const el = $('#home');
+    el.hidden = !show; $('#intro').hidden = !show;
+    if (show && !el.innerHTML) { if (!homeHtml) buildHome(); el.innerHTML = homeHtml; }
+  }
+
+  function refresh(){
+    const solo = state.view !== 'catalog';
+    $('#layout').classList.toggle('solo', solo);
+    $('#navDeals').toggleAttribute('aria-current', false); $('#navFavs').toggleAttribute('aria-current', false);
+    if (state.view === 'deals') $('#navDeals').setAttribute('aria-current', 'page');
+    if (state.view === 'favs') $('#navFavs').setAttribute('aria-current', 'page');
+    const deals = state.view === 'deals';
+    $('#deals').hidden = !deals; $('#grid').hidden = deals; $('#toolbar').hidden = deals; $('#pills').hidden = true; $('#fbar').hidden = solo;
+    renderTabs();
+    const home = state.view === 'catalog' && !state.cat && !state.q && !state.brands.size && !state.stores.size && !state.price && !state.multi && state.stock && state.sort === 'rel' && !Object.values(state.facets).some(x => x.size);
+    renderHome(home);
+    if (deals) { $('#more').hidden = true; $('#didyou').hidden = true; renderDeals(); return; }
+    $('#deals').innerHTML = ''; // no dejar tarjetas de Ofertas escondidas en la página
+    state.shown = 48; current = computeList();
+    if (!solo) renderFilters();
+    renderPills(); renderGrid(false); renderDidYou();
+  }
+
+  const resetFilters = () => { state.brands.clear(); state.facets = {}; state.price = ''; state.allBrands = false; };
+  function toggle(g, v, on){
+    if (g === 'brand') on ? state.brands.add(v) : state.brands.delete(v);
+    else if (g === 'store') on ? state.stores.add(v) : state.stores.delete(v);
+    else if (g === 'price') state.price = on ? v : '';
+    else if (g === 'multi') state.multi = on;
+    else if (g === 'stock') state.stock = on;
+    else { const s = state.facets[g] ||= new Set(); on ? s.add(v) : s.delete(v); }
+  }
+
+  // ---- Ofertas reales ----
+  function renderDeals(){
+    const drops = [], rises = [], gaps = [], st = {};
+    for (const p of data.products) {
+      const av = allOffers(p).filter(o => o.a);
+      for (const o of p.o) {
+        const s = st[o.s] ||= { n:0, adv:0, sum:0, tr:0, real:0 };
+        s.n++;
+        if (o.r > o.p * 1.01) { s.adv++; s.sum += (o.r - o.p) / o.r; if (tracked(o) >= 7) { s.tr++; if (dropOf(o) || (o.l != null && o.p < o.l)) s.real++; } }
+      }
+      const b = av[0];
+      if (b && dropOf(b)) drops.push([p, dropOf(b) / (b.p + dropOf(b))]);
+      else if (b && b.v > b.p * 1.02 && TODAY - b.d <= 14) drops.push([p, (b.v - b.p) / b.v]);
+      const up = riseOf(p); if (up) rises.push([p, up.p - up.v]);
+      if (av.length >= 2) { const hi = av[av.length-1].p; const pct = (hi - b.p) / hi; if (pct >= 0.12 && hi - b.p >= 300) gaps.push([p, hi - b.p, pct]); }
+    }
+    drops.sort((a,b)=>b[1]-a[1]); rises.sort((a,b)=>b[1]-a[1]); gaps.sort((a,b)=>b[1]-a[1]);
+    const prevView = state.view; state.view = 'catalog'; const saveStock = state.stock; // las tarjetas usan los filtros por defecto
+    const cards = (list) => `<div class="grid">${list.map(card).join('')}</div>`;
+    const stores = Object.entries(st).filter(([id]) => data.stores[id]).sort((a,b)=>(b[1].adv/b[1].n)-(a[1].adv/a[1].n));
+    const withTags = stores.filter(([, s]) => s.adv > 0);
+    const anyTracked = withTags.some(([, s]) => s.tr > 0);
+    const html = `
+      ${drops.length ? `<section class="dsec">
+        <h3>Bajaron de precio</h3>
+        <p>Productos que hoy están más baratos que en los días anteriores.</p>
+        ${cards(drops.slice(0, 24).map(x=>x[0]))}
+      </section>` : ''}
+      ${rises.length ? `<section class="dsec">
+        <h3>Subieron de precio</h3>
+        <p>Productos que una tienda subió en los últimos 14 días. Revisa si otra tienda lo tiene más barato.</p>
+        ${cards(rises.slice(0, 24).map(x=>x[0]))}
+      </section>` : ''}
+      <section class="dsec">
+        <h3>Mayor diferencia entre tiendas</h3>
+        <p>El mismo producto, con la mayor diferencia entre la tienda más barata y la más cara.</p>
+        ${cards(gaps.slice(0, 24).map(x=>x[0]))}
+      </section>
+      ${withTags.length ? `<section class="dsec">
+        <h3>¿Cuántos productos tienen etiqueta de descuento?</h3>
+        <p>Productos que muestran un precio “antes” tachado en cada tienda${anyTracked ? ', y cuántos de ellos de verdad están más baratos que en los días anteriores' : ''}.</p>
+        <div class="tscroll"><table class="stbl"><thead><tr><th>Tienda</th><th>Productos</th><th>Con etiqueta de descuento</th><th>Descuento anunciado promedio</th>${anyTracked ? '<th>Bajaron de verdad</th>' : ''}</tr></thead><tbody>
+        ${withTags.map(([id, s]) => { const share = s.adv / s.n; return `<tr><td><span class="sw" style="background:var(--s-${id})"></span> ${esc(storeName(id))}</td><td class="num">${fmt.format(s.n)}</td><td class="num">${fmt.format(s.adv)} (${Math.round(share*100)}%)<div class="bar"><i style="width:${Math.round(share*100)}%"></i></div></td><td class="num">${Math.round(s.sum / s.adv * 100)}%</td>${anyTracked ? `<td class="num">${s.tr ? `${fmt.format(s.real)} de ${fmt.format(s.tr)}` : '—'}</td>` : ''}</tr>`; }).join('')}
+        </tbody></table></div>
+      </section>` : ''}`;
+    state.view = prevView; state.stock = saveStock;
+    $('#deals').innerHTML = html;
+  }
+
+  // ---- Detalles (descripción, características, historial) por categoría ----
+  const detCache = {};
+  const loadDetails = (cat) => detCache[cat] ||= fetch(`details/${cat}.json`, {cache:'no-cache'}).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+
+  // Al pasar el mouse (o el dedo) por la gráfica: precio de cada tienda en ese día.
+  function chartHover(w){
+    const c = JSON.parse(w.dataset.c), svg = $('svg', w), tip = $('.ctip', w), g = $('.cg', w), dots = w.querySelectorAll('.cd');
+    const yv = (v) => c.T + (c.hi - v) / (c.hi - c.lo) * (c.H - c.T - c.B);
+    const show = (e) => {
+      const r = svg.getBoundingClientRect(); if (!r.width) return;
+      const px = (e.clientX - r.left) / r.width * c.W;
+      const d = Math.max(c.minD, Math.min(TODAY, Math.round(c.minD + (px - c.L) / (c.W - c.L - c.R) * c.span)));
+      const X = c.L + (d - c.minD) / c.span * (c.W - c.L - c.R);
+      const rows = c.s.map(([s, e]) => { let v = null, prev = null; for (const x of e) { if (x[0] <= d) { prev = v; v = x; } else break; } return v && [s, v[1], v[0] === d && prev ? v[1] - prev[1] : 0]; });
+      g.setAttribute('x1', X); g.setAttribute('x2', X); g.setAttribute('opacity', .5);
+      dots.forEach((dot, i) => { const row = rows[i]; dot.setAttribute('opacity', row ? 1 : 0); if (row) { dot.setAttribute('cx', X); dot.setAttribute('cy', yv(row[1])); } });
+      tip.innerHTML = `<b>${esc(dayDate(d, {weekday:'short', day:'numeric', month:'short'}))}</b>` + rows.filter(Boolean).sort((a, b) => a[1] - b[1]).map(([s, v, ch]) =>
+        `<div><span class="sw" style="background:var(--s-${s})"></span>${esc(storeName(s))} <b>${plain(v)}</b>${ch ? ` <span class="${ch > 0 ? 'up' : 'dn'}">${ch > 0 ? '+' : '−'}${plain(Math.abs(ch)).slice(2)}</span>` : ''}</div>`).join('');
+      tip.hidden = false;
+      const left = X / c.W * r.width, tw = tip.offsetWidth;
+      tip.style.left = Math.max(0, Math.min(r.width - tw, left - tw / 2)) + 'px';
+    };
+    const hide = () => { tip.hidden = true; g.setAttribute('opacity', 0); dots.forEach(d => d.setAttribute('opacity', 0)); };
+    w.addEventListener('pointermove', show); w.addEventListener('pointerdown', show); w.addEventListener('pointerleave', hide);
+  }
+
+  function chartSvg(h, offers){
+    const series = Object.entries(h || {}).filter(([s, e]) => e?.length);
+    if (!series.length) return '';
+    const minD = Math.min(...series.map(([,e]) => e[0][0]));
+    const span = TODAY - minD;
+    if (span < 1) return '';
+    const W = 640, H = 220, L = 58, R = 12, T = 14, B = 30;
+    const vals = series.flatMap(([,e]) => e.map(x=>x[1]));
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    if (hi === lo) { hi += hi * 0.05; lo -= lo * 0.05; }
+    const pad = (hi - lo) * 0.1; lo -= pad; hi += pad;
+    const x = (d) => L + (d - minD) / span * (W - L - R);
+    const y = (v) => T + (hi - v) / (hi - lo) * (H - T - B);
+    const lines = series.map(([s, e]) => {
+      let d = ''; let prev = null;
+      for (const [day, pr] of e) { const dd = Math.max(day, minD); if (prev == null) d += `M${x(dd).toFixed(1)},${y(pr).toFixed(1)}`; else d += `H${x(dd).toFixed(1)}V${y(pr).toFixed(1)}`; prev = pr; }
+      d += `H${x(TODAY).toFixed(1)}`;
+      return `<path d="${d}" fill="none" stroke="var(--s-${s})" stroke-width="2.5" stroke-linejoin="round"/>`;
+    }).join('');
+    const ticks = [lo + pad, (lo + hi) / 2, hi - pad].map(v => `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#E6EAEE"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#8A949E">${fmt.format(Math.round(v))}</text>`).join('');
+    const xt = [minD, Math.round((minD + TODAY)/2), TODAY].filter((v,i,a)=>a.indexOf(v)===i).map(d => `<text x="${x(d)}" y="${H-8}" text-anchor="${d===minD?'start':d===TODAY?'end':'middle'}" font-size="11" fill="#8A949E">${dayDate(d)}</text>`).join('');
+    const meta = esc(JSON.stringify({ minD, span, W, H, L, R, T, B, lo, hi, s: series }));
+    const marks = `<line class="cg" x1="0" x2="0" y1="${T}" y2="${H-B}" stroke="#141B23" stroke-dasharray="3 3" opacity="0"/>` + series.map(([s]) => `<circle class="cd" r="5" fill="var(--s-${s})" stroke="#fff" stroke-width="2" opacity="0"/>`).join('');
+    return `<div class="chartw" data-c="${meta}"><svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Historial de precios">${ticks}${lines}${xt}${marks}</svg><div class="ctip" hidden></div></div>
+      <div class="legend">${series.map(([s]) => `<span><span class="sw" style="background:var(--s-${s})"></span>${esc(storeName(s))}</span>`).join('')}</div>`;
+  }
+
+  function verdicts(p, h){
+    const out = [];
+    for (const o of allOffers(p)) {
+      const e = h?.[o.s];
+      const days = e?.length ? TODAY - e[0][0] : 0;
+      const name = storeName(o.s);
+      if (!days) {
+        continue;
+      }
+      const prices = e.map(x=>x[1]);
+      const lowPrev = Math.min(...e.filter(x => x[0] < TODAY).map(x=>x[1]), Infinity);
+      const lastChange = e[e.length-1][0];
+      if (o.p < lowPrev - 1) out.push(['good', `${name}: bajó a ${plain(o.p)}, el precio más bajo desde el ${dayDate(e[0][0])} (antes ${plain(lowPrev)}).`]);
+      else if (o.p > Math.min(...prices) + 1) out.push(['bad', `${name}: hoy está ${plain(o.p - Math.min(...prices))} más caro que su precio más bajo desde el ${dayDate(e[0][0])}.`]);
+      else if (o.r > o.p * 1.01 && TODAY - lastChange >= 3) out.push(['bad', `${name} anuncia ${Math.round(discount(o)*100)}% de descuento, pero el precio es el mismo desde el ${dayDate(lastChange)}.`]);
+      else out.push(['', `${name}: ${plain(o.p)}, sin cambios desde el ${dayDate(lastChange)}.`]);
+      if (o.r > o.p * 1.01 && days >= 14 && Math.max(...prices) < o.r - 1) out.push(['bad', `${name}: el precio “antes” de ${plain(o.r)} no se cobró en ningún día desde el ${dayDate(e[0][0])}.`]);
+    }
+    return out;
+  }
+
+  // Descripción: párrafos y viñetas.
+  function descHtml(t){
+    const out = []; let list = [];
+    const flush = () => { if (list.length) { out.push(`<ul>${list.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`); list = []; } };
+    for (const l of String(t).split('\n')) {
+      const m = l.match(/^[•·\-–*]\s*(.+)$/);
+      if (m) list.push(m[1]); else { flush(); out.push(`<p>${esc(l)}</p>`); }
+    }
+    flush();
+    return out.join('');
+  }
+
+  const sheet = $('#sheet');
+  let sheetFromNav = false;
+  async function openSheet(p){
+    const offers = allOffers(p);
+    const best = offers.find(o => o.a) || offers[0];
+    window.vt?.('producto', { producto: p.key, cat: p.c, precio: best?.p, nombre: p.n });
+    const initial = esc((p.b||catName(p.c)).slice(0,1));
+    const chips = Object.entries(p._f).map(([,v]) => v).concat(p.o.length > 1 ? [`En ${p.o.length} tiendas`] : []);
+    const spread = offers.filter(o=>o.a).length > 1 ? Math.max(...offers.filter(o=>o.a).map(o=>o.p)) - best.p : 0;
+    sheet.innerHTML = `
+      <div class="sh-head"><span class="crumb">${esc(catName(p.c))}${p.b ? ' · ' + esc(p.b) : ''}</span><button class="iconbtn" data-close aria-label="Cerrar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="sh-body">
+        <div class="sh-top">
+          <div><div class="gal-main" id="galMain">${imgTag(imgSrc(p), initial)}</div><div class="gal-th" id="galTh"></div></div>
+          <div class="sh-info">
+            <span class="b">${esc(p.b || catName(p.c))}</span>
+            <h2 id="shTitle">${esc(p.n)}</h2>
+            ${p.m ? `<span class="m">Modelo ${esc(p.m)}</span>` : ''}
+            <div><div class="tag${best.a?'':' out'}"><div class="price">${money(best.p)}${best.r > best.p ? `<span class="was">${plain(best.r)}</span>` : ''}</div><div class="where">${offers.length>1?'Más barato en ':'En '}<b>${esc(storeName(best.s))}</b></div></div></div>
+            ${flagsHtml(flagsOf(p, best))}
+            ${spread > 0 ? `<div class="save">Ahorras ${plain(spread)} frente a la tienda más cara</div>` : ''}
+            ${planText(offers.find(o=>o.q)) ? `<div class="plan">${esc(planText(offers.find(o=>o.q)))}</div>` : ''}
+            ${colorsHtml(p, (data.products.filter(x => p.v && x.v === p.v)).sort(famSort), 'sheet')}
+            ${chips.length ? `<div class="chips">${chips.map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>` : ''}
+            <div class="actions">
+              <a class="abtn wa" id="shWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.2 1-2.5c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Compartir</a>
+              <button class="abtn" id="shCopy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Copiar enlace</button>
+              <button class="abtn" id="shFav" aria-pressed="${isFav(p)}">${HEART.replace('<svg ', '<svg fill="none" stroke="currentColor" stroke-width="2" ')}<span>${isFav(p) ? 'Guardado' : 'Guardar'}</span></button>
+              <button class="abtn" id="shCmp">${inCmp(p) ? 'Quitar de comparar' : 'Comparar'}</button>
+            </div>
+            <div id="shAlert"></div>
+          </div>
+        </div>
+        <section class="sh-sec">
+          <h3>Precio en cada tienda</h3>
+          <div class="tscroll"><table class="otable"><thead><tr><th>Tienda</th><th>Precio</th><th class="hide-s">Antes</th><th class="hide-s">Disponible</th><th></th></tr></thead><tbody>
+          ${offers.map((o,i) => `<tr class="${o===best?'best':''}${o.a?'':' outrow'}"><td><span class="stn"><span class="sw" style="background:var(--s-${o.s})"></span>${esc(storeName(o.s))}</span>${o.q ? `<span class="sub2">${o.q.n} cuotas de ${plain(o.p/o.q.n)}<span class="hide-s"> ${esc(o.q.t)}</span></span>` : ''}${o.a ? '' : '<span class="sub2 only-s">Agotado</span>'}</td>
+            <td class="num"><strong>${plain(o.p)}</strong>${o!==best && o.a && best.a ? `<span class="sub2">+${plain(o.p - best.p)}</span>` : ''}</td>
+            <td class="num hide-s">${o.r > o.p ? `<s>${plain(o.r)}</s> <span class="sub2">−${Math.round(discount(o)*100)}%</span>` : '—'}</td>
+            <td class="hide-s">${o.a ? 'Sí' : '<span class="muted">Agotado</span>'}</td>
+            <td class="num"><a class="go" href="${esc(o.u)}" target="_blank" rel="noopener" data-s="${esc(o.s)}" data-k="${esc(p.key)}" data-p="${o.p}" data-c="${esc(p.c)}" data-n="${esc(p.n)}"><span class="hide-s">Ver en tienda</span><span class="only-s">Ver</span> ›</a></td></tr>`).join('')}
+          </tbody></table></div>
+          <p class="refnote">Precios referenciales tomados de cada tienda. El precio válido es el que muestra la tienda al comprar.</p>
+        </section>
+        <section class="sh-sec" id="shHist"></section>
+        <section class="sh-sec" id="shSpecs" hidden></section>
+      </div>`;
+    if (!sheet.open) sheet.showModal();
+    sheet.scrollTop = 0;
+    // Enlace para compartir: la página propia del producto (con foto y precio en la vista previa de WhatsApp).
+    const url = location.origin + location.pathname.replace(/[^/]*$/, '') + 'p/' + productSlug(p) + '/';
+    const txt = `${p.n} — desde ${plain(best.p)} en ${storeName(best.s)}${p.o.length > 1 ? ` (comparado en ${p.o.length} tiendas)` : ''}. Míralo en Vitrina HN: ${url}`;
+    $('#shWa', sheet).href = 'https://wa.me/?text=' + encodeURIComponent(txt);
+    $('#shWa', sheet).addEventListener('click', () => window.vt?.('compartir', { producto: p.key, cat: p.c }));
+    window.vhAlertas?.boton($('#shAlert', sheet), { key: p.key, nombre: p.n, precio: (offers.find(o => o.a) || {}).p });
+    $('#shCopy', sheet).onclick = async () => { try { await navigator.clipboard.writeText(url); toast('Enlace copiado'); } catch { prompt('Copia este enlace:', url); } };
+    $('#shFav', sheet).onclick = () => { toggleFav(p); const on = isFav(p); $('#shFav', sheet).setAttribute('aria-pressed', on); $('#shFav span', sheet).textContent = on ? 'Guardado' : 'Guardar'; };
+    $('#shCmp', sheet).onclick = () => { toggleCmp(p); $('#shCmp', sheet).textContent = inCmp(p) ? 'Quitar de comparar' : 'Comparar'; };
+
+    const det = (await loadDetails(p.c))[p.id] || {};
+    if (!sheet.open || $('#shTitle', sheet)?.textContent !== p.n) return;
+    // Galería
+    // Fotos sin repetir: la misma foto suele venir en varios tamaños o con parámetros distintos.
+    const picKey = (u) => String(u).toLowerCase().replace(/[?#].*$/, '').replace(/\/cache\/[0-9a-f]{20,}\//, '/').replace(/[-_](\d{2,4})x(\d{2,4})(?=\.\w+$)/, '').replace(/^https?:\/\/[^/]+/, '').replace(/\.(webp|jpe?g|png)$/, '');
+    const seenPic = new Set();
+    const pics = [imgSrc(p), ...(det.g || []).filter((u, j) => !(p.t && j === (p.gi || 0)))].filter(Boolean)
+      .filter((u) => { const k = u === imgSrc(p) && p.i ? picKey(p.i) : picKey(u); if (seenPic.has(k)) return false; seenPic.add(k); return true; }).slice(0, 8);
+    if (pics.length > 1) {
+      $('#galTh', sheet).innerHTML = pics.map((u,i) => `<button aria-current="${i===0}" data-pic="${esc(u)}" aria-label="Foto ${i+1}">${imgTag(u, initial, 'loading="lazy"')}</button>`).join('');
+      $('#galTh', sheet).onclick = (e) => { const b = e.target.closest('[data-pic]'); if (!b) return; $('#galMain', sheet).innerHTML = imgTag(b.dataset.pic, initial); $('#galTh', sheet).querySelectorAll('button').forEach(x => x.setAttribute('aria-current', x === b)); };
+    }
+    // Historial
+    const h = det.h || {};
+    const chart = chartSvg(h, offers);
+    const vs = verdicts(p, h);
+    if (chart || vs.length) {
+      $('#shHist', sheet).innerHTML = `<h3>Historial de precio</h3>
+        ${vs.length ? `<ul class="verdicts">${vs.map(([c, t]) => `<li class="${c}">${esc(t)}</li>`).join('')}</ul>` : ''}${chart}`;
+      const cw = $('.chartw', sheet); if (cw) chartHover(cw);
+    } else $('#shHist', sheet).remove();
+    // Características y descripción
+    const specs = det.s || [];
+    if (specs.length || det.d) {
+      const sec = $('#shSpecs', sheet);
+      sec.hidden = false;
+      sec.innerHTML = `<h3>${det.d ? 'Descripción y características' : 'Características'}</h3>
+        ${det.d ? `<div class="desc${det.d.length > 420 ? ' clip' : ''}" id="shDesc">${descHtml(det.d)}</div>${det.d.length > 420 ? '<button class="linkbtn" id="shMore">Leer más</button>' : ''}` : ''}
+        ${specs.length ? `<dl class="specs" style="margin-top:16px">${specs.map(([k,v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}`;
+      const more = $('#shMore', sec); if (more) more.onclick = () => { $('#shDesc', sec).classList.remove('clip'); more.remove(); };
+    }
+  }
+  function closeSheet(){
+    if (!sheet.open) return;
+    sheet.close();
+    if (location.hash.startsWith('#p/')) { if (sheetFromNav) history.back(); else history.replaceState(null, '', viewHash()); }
+    sheetFromNav = false;
+  }
+  sheet.addEventListener('click', (e) => {
+    if (e.target === sheet || e.target.closest('[data-close]')) { closeSheet(); return; }
+    // Cambiar de color o capacidad dentro de la ficha no agrega pasos al historial: la X siempre cierra.
+    const v = e.target.closest('a[href^="#p/"]');
+    if (v && sheet.contains(v)) { const np = byKey.get(decodeURIComponent(v.getAttribute('href').slice(3))); if (np) { e.preventDefault(); history.replaceState(null, '', plink(np)); openSheet(np); } }
+  });
+  sheet.addEventListener('cancel', (e) => { e.preventDefault(); closeSheet(); });
+
+  // ---- Favoritos ----
+  function updateFavCount(){ const n = Object.keys(favs).length; $('#favCount').hidden = !n; $('#favCount').textContent = n; }
+  function toggleFav(p){
+    if (isFav(p)) { for (const o of p.o) delete favs[o.k]; delete favs[p.key]; toast('Quitado de favoritos'); }
+    else { const b = allOffers(p).find(o=>o.a) || p.o[0]; favs[p.key] = { p: b.p, t: Date.now() }; toast('Guardado en favoritos. Te avisaremos si baja de precio.'); }
+    store.set('vh:favs', favs); updateFavCount();
+    document.querySelectorAll(`[data-fav="${CSS.escape(p.key)}"]`).forEach(b => { b.setAttribute('aria-pressed', isFav(p)); b.setAttribute('aria-label', (isFav(p)?'Quitar de':'Guardar en') + ' favoritos'); });
+    if (state.view === 'favs') refresh();
+  }
+
+  // ---- Comparar ----
+  const cmpDlg = $('#cmpDlg');
+  function updateCbar(){
+    $('#cbar').hidden = !cmp.length;
+    $('#cbarText').textContent = cmp.length === 1 ? '1 producto para comparar' : `${cmp.length} productos para comparar`;
+    $('#cbarGo').disabled = cmp.length < 2; $('#cbarGo').style.opacity = cmp.length < 2 ? .5 : 1;
+    document.querySelectorAll('[data-cmp]').forEach(i => { i.checked = cmp.includes(i.dataset.cmp); });
+  }
+  function toggleCmp(p){
+    if (inCmp(p)) cmp = cmp.filter(k => byKey.get(k) !== p);
+    else { if (cmp.length >= 3) { toast('Puedes comparar hasta 3 productos'); updateCbar(); return; } cmp.push(p.key); }
+    store.set('vh:cmp', cmp); updateCbar();
+  }
+  async function openCompare(){
+    const ps = cmp.map(k => byKey.get(k)).filter(Boolean);
+    if (ps.length < 2) return;
+    const dets = await Promise.all(ps.map(p => loadDetails(p.c).then(d => d[p.id] || {})));
+    const bests = ps.map(p => allOffers(p).find(o=>o.a) || p.o[0]);
+    const minP = Math.min(...bests.map(b=>b.p));
+    const facetRows = [...new Set(ps.flatMap(p => (FACETS[p.c]||[]).map(f => f.label)))].map(label => [label, ps.map(p => { const f = (FACETS[p.c]||[]).find(f=>f.label===label); return f ? (p._f[f.id] || '—') : '—'; })]);
+    const specKeys = []; for (const d of dets) for (const [k] of d.s || []) if (!specKeys.includes(k)) specKeys.push(k);
+    const specRows = specKeys.filter(k => dets.filter(d => (d.s||[]).some(x=>x[0]===k)).length >= Math.min(2, dets.length)).slice(0, 14).map(k => [k, dets.map(d => (d.s||[]).find(x=>x[0]===k)?.[1] || '—')]);
+    const row = (label, cells) => `<tr><td>${esc(label)}</td>${cells.map(c => `<td>${c}</td>`).join('')}</tr>`;
+    cmpDlg.innerHTML = `<div class="sh-head"><span class="crumb">Comparar ${ps.length} productos</span><button class="iconbtn" data-close aria-label="Cerrar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="sh-body"><div class="tscroll"><table class="ctbl"><tbody>
+        ${row('', ps.map(p => `${imgTag(imgSrc(p), esc((p.b||'·').slice(0,1)))}<a href="${plink(p)}" data-close-cmp>${esc(p.n)}</a>`))}
+        ${row('Mejor precio', bests.map(b => `<span class="cp">${plain(b.p)}</span>${b.p === minP ? ' <span class="lowest">el más bajo</span>' : ` <span class="muted">+${plain(b.p - minP)}</span>`}`))}
+        ${row('Dónde', bests.map(b => `<span class="sw" style="background:var(--s-${b.s})"></span> ${esc(storeName(b.s))}`))}
+        ${row('Tiendas', ps.map(p => String(p.o.length)))}
+        ${row('Marca', ps.map(p => esc(p.b || '—')))}
+        ${row('Modelo', ps.map(p => esc(p.m || '—')))}
+        ${row('Categoría', ps.map(p => esc(catName(p.c))))}
+        ${facetRows.map(([l, cells]) => row(l, cells.map(esc))).join('')}
+        ${specRows.map(([l, cells]) => row(l, cells.map(esc))).join('')}
+        ${bests.some(b => b.l != null) ? row('Precio más bajo en 30 días', bests.map(b => b.l != null ? plain(Math.min(b.l, b.p)) : '—')) : ''}
+      </tbody></table></div></div>`;
+    cmpDlg.showModal();
+  }
+  cmpDlg.addEventListener('click', (e) => { if (e.target === cmpDlg || e.target.closest('[data-close]')) cmpDlg.close(); if (e.target.closest('[data-close-cmp]')) cmpDlg.close(); });
+  $('#cbarGo').addEventListener('click', openCompare);
+  $('#cbarClear').addEventListener('click', () => { cmp = []; store.set('vh:cmp', cmp); updateCbar(); });
+
+  // ---- Avisos ----
+  let toastTmr;
+  window.vhToast = (m) => toast(m);
+  window.vhPrecio = (k) => { const p = byKey.get(k); const b = p && p.o.filter(o => o.a).sort((a, b) => a.p - b.p)[0]; return b ? b.p : null; };
+  function toast(msg, action){
+    const t = $('#toast');
+    t.innerHTML = `<span>${esc(msg)}</span>${action ? `<button id="toastGo">${esc(action.label)}</button>` : ''}<button class="x" id="toastX" aria-label="Cerrar">✕</button>`;
+    t.hidden = false;
+    if (action) $('#toastGo').onclick = () => { t.hidden = true; action.run(); };
+    $('#toastX').onclick = () => { t.hidden = true; };
+    clearTimeout(toastTmr); toastTmr = setTimeout(() => { t.hidden = true; }, action ? 9000 : 3000);
+  }
+
+  // ---- Rutas: #categoria, #ofertas, #favoritos, #p/<producto> ----
+  const viewHash = () => state.view === 'deals' ? '#ofertas' : state.view === 'favs' ? '#favoritos' : state.cat ? '#' + state.cat : location.pathname + location.search;
+  function route(){
+    const h = decodeURIComponent(location.hash.slice(1));
+    if (h.startsWith('p/')) {
+      const p = byKey.get(h.slice(2));
+      if (p) { openSheet(p); return; }
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+    if (sheet.open) { sheet.close(); sheetFromNav = false; }
+    if (h === 'alertas') { history.replaceState(null, '', viewHash()); window.vhAlertas?.lista(); return; }
+    let view = 'catalog', cat = state.cat;
+    if (h === 'ofertas') view = 'deals';
+    else if (h === 'favoritos') view = 'favs';
+    else cat = data.categories.some(c=>c.id===h) ? h : '';
+    if (view !== state.view || cat !== state.cat) { if (cat !== state.cat) resetFilters(); state.view = view; state.cat = view === 'catalog' ? cat : ''; refresh(); }
+  }
+  window.addEventListener('hashchange', route);
+
+  // ---- Eventos ----
+  let tmr; $('#q').addEventListener('input', (e) => { clearTimeout(tmr); tmr = setTimeout(()=>{ state.q = e.target.value; applyQuery(); if (state.view !== 'catalog') { state.view = 'catalog'; history.replaceState(null, '', viewHash()); } refresh(); }, 160); clearTimeout(qTmr); qTmr = setTimeout(() => { const q = e.target.value.trim().toLowerCase(); if (q.length >= 3 && q !== lastQ) { lastQ = q; window.vt?.('busqueda', { q }); } }, 1500); });
+  let qTmr, lastQ = '';
+  $('#tabs').addEventListener('click', (e) => { const b = e.target.closest('[data-c]'); if (!b) return; const id = b.dataset.c; if (state.view === 'catalog' && id === state.cat) return; resetFilters(); state.view = 'catalog'; state.cat = id; history.replaceState(null, '', viewHash()); refresh(); b.scrollIntoView({inline:'nearest', block:'nearest'}); });
+  $('#filters').addEventListener('input', (e) => { const f = e.target.closest('[data-pfind]'); if (!f) return; (state.pfind ||= {})[f.dataset.pfind] = f.value; applyPfind(f.dataset.pfind, f.value); });
+  $('#filters').addEventListener('change', (e) => { const i = e.target.closest('input[data-g]'); if (!i) return; toggle(i.dataset.g, i.value, i.type === 'radio' ? i.value !== '' : i.checked); refresh(); });
+  $('#filters').addEventListener('click', (e) => {
+    const t = e.target.closest('[data-toggle]');
+    if (t) { const id = t.dataset.toggle; state.openDrop = state.openDrop === id ? '' : id; document.querySelectorAll('.fdrop').forEach(d => d.classList.toggle('open', d.dataset.drop === state.openDrop)); return; }
+    if (e.target.closest('[data-close-drop]')) { state.openDrop = ''; document.querySelectorAll('.fdrop.open').forEach(d => d.classList.remove('open')); return; }
+    const cg = e.target.closest('[data-clear-group]');
+    if (cg) { const g = cg.dataset.clearGroup;
+      if (g === 'brand') state.brands.clear(); else if (g === 'store') state.stores.clear(); else if (g === 'price') state.price = ''; else state.facets[g]?.clear();
+      if (state.pfind) delete state.pfind[g];
+      refresh(); return; }
+    const q = e.target.closest('[data-quick]');
+    if (q) { if (q.dataset.quick === 'multi') state.multi = !state.multi; else state.stock = !state.stock; refresh(); }
+  });
+  $('#pills').addEventListener('click', (e) => {
+    if (e.target.closest('#clearAll')) { resetFilters(); state.stores.clear(); state.multi = false; refresh(); return; }
+    const b = e.target.closest('[data-g]'); if (!b) return; toggle(b.dataset.g, b.dataset.v, false); refresh();
+  });
+  $('#sort').addEventListener('change', (e) => { state.sort = e.target.value; current = computeList(); state.shown = 48; renderGrid(false); });
+  $('#more').addEventListener('click', () => { state.shown += 48; renderGrid(true); });
+  // Clic en tarjetas: favoritos, comparar y abrir la ficha
+  document.querySelector('main').addEventListener('click', (e) => {
+    const f = e.target.closest('[data-fav]'); if (f) { e.preventDefault(); toggleFav(byKey.get(f.dataset.fav)); return; }
+    const sw = e.target.closest('[data-swap]');
+    if (sw) { const art = sw.closest('article.p'); const np = byKey.get(sw.dataset.swap); if (art && np) art.outerHTML = card(np); return; }
+    const a = e.target.closest('a[href^="#p/"]'); if (a) { sheetFromNav = true; }
+  });
+  document.querySelector('main').addEventListener('change', (e) => { const c = e.target.closest('[data-cmp]'); if (c) toggleCmp(byKey.get(c.dataset.cmp)); });
+  // Filtros desplegables: se abre uno a la vez y se cierra al tocar fuera.
+  document.addEventListener('click', (e) => { if (state.openDrop && !e.target.closest('.fdrop')) { state.openDrop = ''; document.querySelectorAll('.fdrop.open').forEach(d => d.classList.remove('open')); } });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && state.openDrop) { state.openDrop = ''; document.querySelectorAll('.fdrop.open').forEach(d => d.classList.remove('open')); } });
+
+  // ---- Inicio ----
+  updateFavCount(); updateCbar();
+  // Búsqueda desde Google (?q=…)
+  const q0 = new URLSearchParams(location.search).get('q');
+  if (q0) { $('#q').value = q0; state.q = q0; applyQuery(); }
+  const h0 = decodeURIComponent(location.hash.slice(1));
+  if (h0 === 'ofertas') state.view = 'deals';
+  else if (h0 === 'favoritos') state.view = 'favs';
+  else if (data.categories.some(c=>c.id===h0)) state.cat = h0;
+  refresh();
+  if (h0.startsWith('p/')) route();
+  // Aviso: favoritos que bajaron de precio desde que se guardaron
+  const dropped = data.products.filter(p => { const fe = favEntry(p); if (!fe) return false; const b = allOffers(p).find(o=>o.a); return b && b.p < fe.p - 1; });
+  if (dropped.length) toast(dropped.length === 1 ? `Un favorito bajó de precio: ${dropped[0].n}` : `${dropped.length} de tus favoritos bajaron de precio`, { label:'Ver', run: () => { location.hash = dropped.length === 1 ? plink(dropped[0]) : '#favoritos'; } });
+})();
+</script>
+</body>
+</html>
